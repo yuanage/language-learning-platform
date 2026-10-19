@@ -1,0 +1,14 @@
+{
+  "badges": [
+    { "code": "first_lesson", "name": "初出茅庐", "icon": "🌱", "description": "完成第 1 个课时", "criteria": { "type": "lessons_completed", "count": 1 }, "points": 10 },
+    { "code": "lessons_10", "name": "学有所成", "icon": "📚", "description": "完成 10 个课时", "criteria": { "type": "lessons_completed", "count": 10 }, "points": 50 },
+    { "code": "streak_7", "name": "七日坚持", "icon": "🔥", "description": "连续学习 7 天", "criteria": { "type": "streak", "count": 7 }, "points": 30 },
+    { "code": "streak_30", "name": "三十而立", "icon": "🏆", "description": "连续学习 30 天", "criteria": { "type": "streak", "count": 30 }, "points": 100 },
+    { "code": "vocab_50", "name": "词汇新手", "icon": "🃏", "description": "学会 50 个单词", "criteria": { "type": "vocab_learned", "count": 50 }, "points": 20 },
+    { "code": "vocab_200", "name": "词汇大师", "icon": "🧠", "description": "学会 200 个单词", "criteria": { "type": "vocab_learned", "count": 200 }, "points": 80 },
+    { "code": "reviews_100", "name": "复习达人", "icon": "🔁", "description": "复习答对 100 次", "criteria": { "type": "reviews_correct", "count": 100 }, "points": 30 },
+    { "code": "first_post", "name": "初来乍到", "icon": "✍️", "description": "发布第 1 篇帖子", "criteria": { "type": "posts", "count": 1 }, "points": 10 },
+    { "code": "social_5", "name": "社交达人", "icon": "💬", "description": "发表 5 条评论", "criteria": { "type": "comments", "count": 5 }, "points": 20 },
+    { "code": "points_500", "name": "积分富翁", "icon": "💎", "description": "累计积分达到 500", "criteria": { "type": "points", "count": 500 }, "points": 0 }
+  ]
+}

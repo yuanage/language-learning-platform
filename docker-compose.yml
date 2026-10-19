@@ -1,0 +1,63 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: llp-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-llp_root_2026}
+      MYSQL_DATABASE: language_learning
+      MYSQL_USER: llp
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-llp_pass_2026}
+      TZ: Asia/Shanghai
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    ports:
+      - "3308:3306"
+    volumes:
+      - llp_mysql_data:/var/lib/mysql
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-p${MYSQL_ROOT_PASSWORD:-llp_root_2026}"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+    networks:
+      - llp-network
+
+  server:
+    build: ./server
+    container_name: llp-server
+    restart: unless-stopped
+    environment:
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_NAME: language_learning
+      DB_USER: llp
+      DB_PASSWORD: ${MYSQL_PASSWORD:-llp_pass_2026}
+      JWT_SECRET: ${JWT_SECRET:-llp_jwt_secret_2026}
+      PORT: 3002
+      TZ: Asia/Shanghai
+    ports:
+      - "3002:3002"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - llp-network
+
+  client:
+    build: ./client
+    container_name: llp-client
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    depends_on:
+      - server
+    networks:
+      - llp-network
+
+volumes:
+  llp_mysql_data:
+
+networks:
+  llp-network:
+    driver: bridge

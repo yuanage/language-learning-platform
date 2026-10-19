@@ -1,0 +1,553 @@
+{
+  "code": "ko",
+  "name": "韩语",
+  "speech_locale": "ko-KR",
+  "emoji": "🇰🇷",
+  "levels": [
+    {
+      "level": "beginner",
+      "name": "入门",
+      "courses": [
+        {
+          "title": "字母与问候",
+          "description": "从韩文字母到日常寒暄，迈出开口说韩语的第一步。",
+          "lessons": [
+            {
+              "title": "韩文字母与发音",
+              "vocabularies": [
+                { "word": "안녕", "reading": "annyeong", "translation": "你好；安宁", "example_sentence": "아침에 이웃과 안녕을 나눴어요." },
+                { "word": "감사", "reading": "gamsa", "translation": "感谢", "example_sentence": "부모님께 늘 감사해요." },
+                { "word": "이름", "reading": "ireum", "translation": "名字", "example_sentence": "이름표를 붙였어요." },
+                { "word": "네", "reading": "ne", "translation": "是；好的", "example_sentence": "네, 알겠어요." },
+                { "word": "아니요", "reading": "aniyo", "translation": "不是", "example_sentence": "아니요, 괜찮아요." },
+                { "word": "잘", "reading": "jal", "translation": "好好地；擅长", "example_sentence": "한국말을 잘해요." }
+              ],
+              "grammar_questions": [
+                { "stem": "아침에 만나면 ___라고 인사해요.", "options": ["안녕히 가세요", "안녕하세요", "안녕히 주무세요", "어서 오세요"], "answer": 1, "explanation": "「안녕하세요」是白天见面时最常用的问候语。" },
+                { "stem": "저는 학생___.", "options": ["아니에요", "있습니다", "입니다", "아닙니다"], "answer": 2, "explanation": "「입니다」是「이다」的格式体尊敬阶，表示『是……』；「있습니다」意为『有/在』。" },
+                { "stem": "이름이 뭐___?", "options": ["예요", "이에요", "세요", "니까"], "answer": 0, "explanation": "「이름」没有收音，后面用「예요」；有收音时用「이에요」。" }
+              ],
+              "listening_materials": [
+                { "text": "안녕하세요? 처음 뵙겠습니다.", "translation": "您好？初次见面。", "speed_level": 0 },
+                { "text": "이름이 뭐예요? 저는 박지훈이에요.", "translation": "你叫什么名字？我叫朴智勋。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "问候与告别",
+              "vocabularies": [
+                { "word": "선생님", "reading": "seonsaengnim", "translation": "老师", "example_sentence": "담임 선생님을 만났어요." },
+                { "word": "친구", "reading": "chingu", "translation": "朋友", "example_sentence": "고등학교 친구를 다시 만났어요." },
+                { "word": "오늘", "reading": "oneul", "translation": "今天", "example_sentence": "오늘은 일요일이에요." },
+                { "word": "내일", "reading": "naeil", "translation": "明天", "example_sentence": "내일 또 만나요." },
+                { "word": "어서", "reading": "eoseo", "translation": "快；赶快", "example_sentence": "어서 오세요." },
+                { "word": "다시", "reading": "dasi", "translation": "再；重新", "example_sentence": "다시 한번 말해 주세요." }
+              ],
+              "grammar_questions": [
+                { "stem": "오늘 날씨가 좋___.", "options": ["어요", "여요", "아요", "워요"], "answer": 2, "explanation": "「좋다」词干的元音是「ㅗ」，接「-아요」变成「좋아요」。" },
+                { "stem": "어제 친구를 만났___.", "options": ["아요", "어요", "예요", "여요"], "answer": 1, "explanation": "「만나다」的过去式是「만났다」，非格式体结尾为「만났어요」。" },
+                { "stem": "손님이 오면 ___라고 말해요.", "options": ["안녕히 가세요", "안녕히 계세요", "어서 오세요", "다녀오세요"], "answer": 2, "explanation": "「어서 오세요」用于欢迎来访的客人；「안녕히 가세요」是送别离开的人。" }
+              ],
+              "listening_materials": [
+                { "text": "안녕히 주무세요. 내일 봐요.", "translation": "晚安。明天见。", "speed_level": 0 },
+                { "text": "다시 만나서 반가워요. 어서 들어와요.", "translation": "再次见到你很高兴。快进来吧。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "数字与时间",
+              "vocabularies": [
+                { "word": "하나", "reading": "hana", "translation": "一", "example_sentence": "우유 하나 주세요." },
+                { "word": "둘", "reading": "dul", "translation": "二", "example_sentence": "사과를 둘 샀어요." },
+                { "word": "몇", "reading": "myeot", "translation": "几；多少", "example_sentence": "몇 개 드릴까요?" },
+                { "word": "살", "reading": "sal", "translation": "岁", "example_sentence": "할머니는 일흔 살이에요." },
+                { "word": "시간", "reading": "sigan", "translation": "时间", "example_sentence": "시간 있어요?" },
+                { "word": "지금", "reading": "jigeum", "translation": "现在", "example_sentence": "지금 나가는 길이에요." }
+              ],
+              "grammar_questions": [
+                { "stem": "지금 몇 ___예요?", "options": ["살", "시", "명", "개"], "answer": 1, "explanation": "「몇 시예요?」询问时间；「몇 살」问年龄，「몇 명」问人数。" },
+                { "stem": "저는 스무 ___이에요.", "options": ["살", "개", "시", "명"], "answer": 0, "explanation": "年龄用「살」计数；「스물」用在量词前时缩略为「스무」。" },
+                { "stem": "사과 하나 ___.", "options": ["가세요", "계세요", "하세요", "주세요"], "answer": 3, "explanation": "「-아/어 주세요」表示请对方为自己做某事，购物点餐时常用。" }
+              ],
+              "listening_materials": [
+                { "text": "혹시 지금 몇 시예요? 네 시 반쯤 돼요.", "translation": "请问现在几点？四点半左右。", "speed_level": 0 },
+                { "text": "동생은 열 살이에요. 저는 스무 살이에요.", "translation": "弟弟十岁。我二十岁。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "日常场所与提问",
+              "vocabularies": [
+                { "word": "학교", "reading": "hakgyo", "translation": "学校", "example_sentence": "동생은 아직 학교에 다녀요." },
+                { "word": "집", "reading": "jip", "translation": "家", "example_sentence": "집에 언제 가요?" },
+                { "word": "언제", "reading": "eonje", "translation": "什么时候", "example_sentence": "언제 시간 돼요?" },
+                { "word": "어디", "reading": "eodi", "translation": "哪里", "example_sentence": "어디 아파요?" },
+                { "word": "뭐", "reading": "mwo", "translation": "什么", "example_sentence": "점심에 뭐 먹어요?" },
+                { "word": "물", "reading": "mul", "translation": "水", "example_sentence": "목이 말라서 물을 마셔요." }
+              ],
+              "grammar_questions": [
+                { "stem": "저는 학교___ 가요.", "options": ["에서", "에", "을", "로"], "answer": 1, "explanation": "「에」表示移动的目的地；「에서」表示动作发生的场所。" },
+                { "stem": "어제 도서관___ 공부했어요.", "options": ["에", "로", "에서", "부터"], "answer": 2, "explanation": "「에서」表示动作进行的场所，『在图书馆学习』。" },
+                { "stem": "물 좀 주___.", "options": ["셔서", "시고", "세요", "신"], "answer": 2, "explanation": "「-세요」是请求的尊敬形式，「주세요」即『请给我』。" }
+              ],
+              "listening_materials": [
+                { "text": "어디에 가요? 도서관에 가요.", "translation": "去哪里？去图书馆。", "speed_level": 0 },
+                { "text": "주말에 뭐 해요? 집에서 쉬어요.", "translation": "周末做什么？在家休息。", "speed_level": 0 }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "自我介绍与点餐",
+          "description": "学会介绍自己和家人，在餐厅与商店自信开口。",
+          "lessons": [
+            {
+              "title": "自我介绍",
+              "vocabularies": [
+                { "word": "저", "reading": "jeo", "translation": "我（谦称）", "example_sentence": "저는 김민수예요." },
+                { "word": "학생", "reading": "haksaeng", "translation": "学生", "example_sentence": "그 학생은 부산에서 왔어요." },
+                { "word": "대학생", "reading": "daehaksaeng", "translation": "大学生", "example_sentence": "누나는 대학생이에요." },
+                { "word": "취미", "reading": "chwimi", "translation": "爱好", "example_sentence": "취미가 뭐예요?" },
+                { "word": "독서", "reading": "dokseo", "translation": "读书", "example_sentence": "주말마다 독서를 해요." },
+                { "word": "반갑다", "reading": "bangapda", "translation": "（见到你）高兴", "example_sentence": "만나서 반갑습니다." }
+              ],
+              "grammar_questions": [
+                { "stem": "저___ 중국 사람이에요.", "options": ["가", "는", "을", "에"], "answer": 1, "explanation": "「는」是主题助词，提示句子谈论的对象；「저」作话题时用「는」。" },
+                { "stem": "제 취미___ 독서예요.", "options": ["을", "도", "가", "는"], "answer": 3, "explanation": "介绍爱好时用主题助词「는」引出话题。" },
+                { "stem": "만나서 ___.", "options": ["감사합니다", "죄송합니다", "반갑습니다", "괜찮습니다"], "answer": 2, "explanation": "「만나서 반갑습니다」是初次见面时的固定问候语。" }
+              ],
+              "listening_materials": [
+                { "text": "저는 중국 사람이에요. 한국어를 배우고 있어요.", "translation": "我是中国人。我正在学韩语。", "speed_level": 0 },
+                { "text": "제 취미는 음악 감상이에요. 주말에 자주 들어요.", "translation": "我的爱好是听音乐。周末经常听。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "家人与职业",
+              "vocabularies": [
+                { "word": "가족", "reading": "gajok", "translation": "家人", "example_sentence": "주말에 가족과 시장에 갔어요." },
+                { "word": "아버지", "reading": "abeoji", "translation": "爸爸", "example_sentence": "아버지는 신문을 보세요." },
+                { "word": "어머니", "reading": "eomeoni", "translation": "妈妈", "example_sentence": "어머니는 요리를 잘해요." },
+                { "word": "회사원", "reading": "hoesawon", "translation": "公司职员", "example_sentence": "오빠는 회사원이에요." },
+                { "word": "의사", "reading": "uisa", "translation": "医生", "example_sentence": "고모는 의사예요." },
+                { "word": "형", "reading": "hyeong", "translation": "哥哥（男生称谓）", "example_sentence": "형은 대학교에 다녀요." }
+              ],
+              "grammar_questions": [
+                { "stem": "가족이 몇 ___이에요?", "options": ["개", "명", "살", "마리"], "answer": 1, "explanation": "数人用量词「명」；「마리」用于动物，「개」用于物品。" },
+                { "stem": "우리 아버지는 ___이에요.", "options": ["회사에서", "회사로", "회사원", "회사에"], "answer": 2, "explanation": "说明职业时用「名词 + 이에요/예요」的谓语结构。" },
+                { "stem": "누나는 병원에서 일해요. 그래서 누나는 ___예요.", "options": ["약국", "환자", "간호", "의사"], "answer": 3, "explanation": "在医院工作、给人看病的人是「의사（医生）」。" }
+              ],
+              "listening_materials": [
+                { "text": "가족이 몇 명이에요? 다섯 명이에요.", "translation": "家里有几口人？五口人。", "speed_level": 0 },
+                { "text": "저는 부모님과 남동생 한 명이 있어요.", "translation": "我有父母和一个弟弟。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "餐厅点餐",
+              "vocabularies": [
+                { "word": "메뉴", "reading": "menyu", "translation": "菜单", "example_sentence": "메뉴 좀 보여 주세요." },
+                { "word": "김치찌개", "reading": "gimchijjigae", "translation": "泡菜汤", "example_sentence": "김치찌개가 제일 좋아요." },
+                { "word": "맛있다", "reading": "masitda", "translation": "好吃", "example_sentence": "이 케이크는 정말 맛있어요." },
+                { "word": "맵다", "reading": "maepda", "translation": "辣", "example_sentence": "이 음식은 좀 매워요." },
+                { "word": "주문", "reading": "jumun", "translation": "点餐", "example_sentence": "잠깐만요, 아직 주문 안 했어요." },
+                { "word": "계산", "reading": "gyesan", "translation": "结账", "example_sentence": "따로 계산해 주세요." }
+              ],
+              "grammar_questions": [
+                { "stem": "김치찌개 하나 ___.", "options": ["가세요", "주세요", "계세요", "보세요"], "answer": 1, "explanation": "点餐时用「-아/어 주세요」，请对方把餐点拿给自己。" },
+                { "stem": "이 음식은 좀 ___.", "options": ["맵어요", "매워서", "매워요", "매워"], "answer": 2, "explanation": "「맵다」的收音「ㅂ」遇到元音脱落，变成「매워요」。" },
+                { "stem": "손님이 말했어요. \"정말 ___!\"", "options": ["맛있어서", "맛있으면", "맛있는데", "맛있어요"], "answer": 3, "explanation": "直接表达感受时用终结词尾「-어요」，「맛있어요」即『很好吃』。" }
+              ],
+              "listening_materials": [
+                { "text": "주문하시겠어요? 비빔밥 하나 주세요.", "translation": "请问要点餐吗？请给我一份拌饭。", "speed_level": 0 },
+                { "text": "너무 매워요. 차가운 물 주세요.", "translation": "太辣了。请给我冷水。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "购物与价格",
+              "vocabularies": [
+                { "word": "얼마", "reading": "eolma", "translation": "多少钱", "example_sentence": "버스 요금은 얼마예요?" },
+                { "word": "사다", "reading": "sada", "translation": "买", "example_sentence": "어제 책을 두 권 샀어요." },
+                { "word": "비싸다", "reading": "bissada", "translation": "贵", "example_sentence": "이 옷은 좀 비싸요." },
+                { "word": "싸다", "reading": "ssada", "translation": "便宜", "example_sentence": "시장 과일이 백화점보다 싸요." },
+                { "word": "가게", "reading": "gage", "translation": "商店", "example_sentence": "동네에 작은 가게가 많아요." },
+                { "word": "세일", "reading": "seil", "translation": "打折", "example_sentence": "겨울 옷이 지금 세일이에요." }
+              ],
+              "grammar_questions": [
+                { "stem": "이거 ___예요?", "options": ["언제", "얼마", "어디", "누구"], "answer": 1, "explanation": "「얼마」询问价格；「언제」问时间，「어디」问地点。" },
+                { "stem": "저 가방은 너무 ___.", "options": ["비싸요", "비싸서", "비싸", "비싸고"], "answer": 0, "explanation": "「비싸다」接「-아요」作句子谓语，变成「비싸요」。" },
+                { "stem": "과일을 사___ 갈게요.", "options": ["더니", "는데", "려고", "서"], "answer": 3, "explanation": "「사서」是「사다」接「-아서」，表示先买水果然后再走。" }
+              ],
+              "listening_materials": [
+                { "text": "저 가방은 얼마예요? 삼만 원이에요.", "translation": "那个包多少钱？三万韩元。", "speed_level": 0 },
+                { "text": "지금 세일 중이에요. 이 기회에 사세요.", "translation": "现在正在打折。趁这个机会买吧。", "speed_level": 0 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "intermediate",
+      "name": "进阶",
+      "courses": [
+        {
+          "title": "旅行与职场",
+          "description": "从行程预订到会议沟通，从容应对旅行与职场场景。",
+          "lessons": [
+            {
+              "title": "旅行计划与预订",
+              "vocabularies": [
+                { "word": "여행", "reading": "yeohaeng", "translation": "旅行", "example_sentence": "가을에 단풍 구경하러 여행을 갔어요." },
+                { "word": "예약", "reading": "yeyak", "translation": "预订", "example_sentence": "오늘 저녁 식당을 예약했어요." },
+                { "word": "경험", "reading": "gyeongheom", "translation": "经验", "example_sentence": "스키 타 본 경험이 있어요." },
+                { "word": "일정", "reading": "iljeong", "translation": "行程", "example_sentence": "일정이 빡빡하지만 재미있을 거예요." },
+                { "word": "기념품", "reading": "ginyeompum", "translation": "纪念品", "example_sentence": "부산에서 기념품을 좀 샀어요." },
+                { "word": "풍경", "reading": "punggyeong", "translation": "风景", "example_sentence": "밤바다 풍경이 인상적이었어요." }
+              ],
+              "grammar_questions": [
+                { "stem": "다음 달에 부산___ 여행을 떠나요.", "options": ["에서", "을", "로", "으로"], "answer": 3, "explanation": "「-(으)로」表示移动的方向；「부산」以辅音结尾，用「으로」。" },
+                { "stem": "호텔을 미리 ___ 두었어요.", "options": ["예약하", "예약해", "예약하는", "예약되어"], "answer": 1, "explanation": "「-아/어 두다」表示动作完成后保持其结果状态。" },
+                { "stem": "외국에서 사는 ___가 있어요.", "options": ["경험", "경험이", "경험을", "경험에"], "answer": 0, "explanation": "「-ㄴ/은 경험이 있다」表示『有……的经历』。" }
+              ],
+              "listening_materials": [
+                { "text": "제주도 여행은 사흘 동안이에요. 일정을 미리 짜 두세요.", "translation": "济州岛旅行为期三天。请提前安排好行程。", "speed_level": 1 },
+                { "text": "숙소와 비행기표를 모두 예약했어요.", "translation": "住宿和机票都订好了。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "交通与住宿",
+              "vocabularies": [
+                { "word": "지하철", "reading": "jihacheol", "translation": "地铁", "example_sentence": "지하철 안에서는 조용히 해요." },
+                { "word": "승객", "reading": "seunggaek", "translation": "乘客", "example_sentence": "승객들이 줄을 서서 기다려요." },
+                { "word": "환승", "reading": "hwanseung", "translation": "换乘", "example_sentence": "같은 노선이라 환승할 필요가 없어요." },
+                { "word": "숙소", "reading": "sukso", "translation": "住宿处", "example_sentence": "숙소 체크인은 오후 세 시예요." },
+                { "word": "좌석", "reading": "jwaseok", "translation": "座位", "example_sentence": "이 좌석은 창가예요." },
+                { "word": "길", "reading": "gil", "translation": "路", "example_sentence": "죄송하지만 길 좀 물어봐도 돼요?" }
+              ],
+              "grammar_questions": [
+                { "stem": "여기서 2호선___ 환승하세요.", "options": ["에서", "으로", "에", "을"], "answer": 1, "explanation": "「-(으)로」表示换乘所搭乘的线路或工具。" },
+                { "stem": "출퇴근 시간에는 ___가 빨라요.", "options": ["지하철을", "지하철에", "지하철이", "지하철"], "answer": 3, "explanation": "「가」已是主格助词，空格处填名词「지하철」即可。" },
+                { "stem": "빈 ___가 있으면 앉으세요.", "options": ["좌석을", "좌석에", "좌석", "좌석도"], "answer": 2, "explanation": "「빈 좌석」意为『空座位』，后面的「가」是主格助词。" }
+              ],
+              "listening_materials": [
+                { "text": "실례합니다, 서울역에 어떻게 가요? 1호선을 타고 시청에서 환승하세요.", "translation": "打扰一下，首尔站怎么走？坐1号线，在市厅换乘。", "speed_level": 1 },
+                { "text": "숙소는 지하철역에서 걸어서 십 분 정도예요.", "translation": "住处离地铁站步行十分钟左右。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "求职与面试",
+              "vocabularies": [
+                { "word": "면접", "reading": "myeonjeop", "translation": "面试", "example_sentence": "면접에서 너무 긴장했어요." },
+                { "word": "경력", "reading": "gyeongnyeok", "translation": "资历", "example_sentence": "그는 삼십 년 경력의 베테랑이에요." },
+                { "word": "지원하다", "reading": "jiwonhada", "translation": "应聘", "example_sentence": "신입으로 지원하고 싶어요." },
+                { "word": "자기소개", "reading": "jagisogae", "translation": "自我介绍", "example_sentence": "면접 첫 순서는 자기소개였어요." },
+                { "word": "부서", "reading": "buseo", "translation": "部门", "example_sentence": "신규 부서에 배치되었어요." },
+                { "word": "열심히", "reading": "yeolsimhi", "translation": "努力地", "example_sentence": "열심히 준비한 만큼 좋은 결과가 있었어요." }
+              ],
+              "grammar_questions": [
+                { "stem": "이 회사___ 지원하게 된 이유가 뭐예요?", "options": ["에서", "로", "에게", "에"], "answer": 3, "explanation": "「-에 지원하다」表示向某个单位应聘；「에서」表示动作发生的场所。" },
+                { "stem": "이 분야에서 오랜 ___을 쌓았어요.", "options": ["경력", "경력이", "경력에", "경력도"], "answer": 0, "explanation": "「경력을 쌓다」是惯用搭配，意为『积累资历』。" },
+                { "stem": "준비를 ___ 했어요.", "options": ["열심", "열심히", "열심의", "열심도"], "answer": 1, "explanation": "「열심히」是副词，用来修饰动词「하다」。" }
+              ],
+              "listening_materials": [
+                { "text": "저희 회사에 지원한 이유가 뭐예요? 한국어를 살리고 싶어서요.", "translation": "您应聘我们公司的理由是什么？我想学以致用我的韩语。", "speed_level": 1 },
+                { "text": "간단히 자기소개를 해 보세요. 광고 부서에서 삼 년 일했어요.", "translation": "请简单做个自我介绍。我在广告部工作过三年。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "会议与工作沟通",
+              "vocabularies": [
+                { "word": "회의", "reading": "hoeui", "translation": "会议", "example_sentence": "회의 자료를 미리 나눠 주세요." },
+                { "word": "보고서", "reading": "bogoseo", "translation": "报告书", "example_sentence": "보고서 초안을 보내 드릴게요." },
+                { "word": "검토", "reading": "geomto", "translation": "审阅", "example_sentence": "내용을 한 번 검토해 보세요." },
+                { "word": "계획", "reading": "gyehoek", "translation": "计划", "example_sentence": "내년 계획을 세우고 있어요." },
+                { "word": "마감", "reading": "magam", "translation": "截止", "example_sentence": "마감까지 이틀밖에 안 남았어요." },
+                { "word": "협조", "reading": "hyeopjo", "translation": "配合", "example_sentence": "적극적인 협조 부탁드립니다." }
+              ],
+              "grammar_questions": [
+                { "stem": "계약서를 검토___ 주세요.", "options": ["해서", "하며", "해", "하도록"], "answer": 2, "explanation": "「-아/어 주세요」前面接动词词干「해」，表示请对方做某事。" },
+                { "stem": "마감___는 다음 주 금요일이에요.", "options": ["시", "일", "수", "회"], "answer": 1, "explanation": "「마감일」意为『截止日期』，指必须完成工作的最后一天。" },
+                { "stem": "보고서를 어제 다 ___.", "options": ["작성해요", "작성할게요", "작성하는", "작성했어요"], "answer": 3, "explanation": "「어제」表明动作发生在过去，所以用过去式「작성했어요」。" }
+              ],
+              "listening_materials": [
+                { "text": "오후 회의는 몇 시부터예요? 세 시부터 네 시까지예요.", "translation": "下午的会议从几点开始？从三点到四点。", "speed_level": 1 },
+                { "text": "보고서는 이번 주 금요일까지 제출해 주세요.", "translation": "报告请在本周五之前提交。", "speed_level": 1 }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "文化生活",
+          "description": "透过美食、节庆与流行文化，读懂韩国人的日常。",
+          "lessons": [
+            {
+              "title": "韩国美食",
+              "vocabularies": [
+                { "word": "음식", "reading": "eumsik", "translation": "菜肴", "example_sentence": "매운 음식을 잘 먹어요." },
+                { "word": "반찬", "reading": "banchan", "translation": "小菜", "example_sentence": "반찬을 더 주세요." },
+                { "word": "발효", "reading": "balhyo", "translation": "发酵", "example_sentence": "된장도 발효 식품이에요." },
+                { "word": "양념", "reading": "yangnyeom", "translation": "调味", "example_sentence": "양념 치킨을 좋아해요." },
+                { "word": "맛집", "reading": "matjip", "translation": "人气餐馆", "example_sentence": "SNS에서 맛집을 찾아 봤어요." },
+                { "word": "기름", "reading": "gireum", "translation": "油", "example_sentence": "기름이 적은 음식을 골랐어요." }
+              ],
+              "grammar_questions": [
+                { "stem": "한국 음식___ 좋아해요.", "options": ["이", "에서", "을", "에"], "answer": 2, "explanation": "「좋아하다」是他动词，喜欢的对象用宾格助词「을/를」。" },
+                { "stem": "김치는 발효 ___이에요.", "options": ["식품을", "식품", "식품에", "식품도"], "answer": 1, "explanation": "「이에요」前面的空格填名词，表示『是……』。" },
+                { "stem": "반찬이 여러 ___ 나왔어요.", "options": ["그릇", "명", "가지", "개"], "answer": 2, "explanation": "「가지」作量词表示『种』，指种类之多。" }
+              ],
+              "listening_materials": [
+                { "text": "한국 음식 중에 뭘 제일 좋아해요? 저는 된장찌개를 제일 좋아해요.", "translation": "韩国菜里你最喜欢什么？我最喜欢大酱汤。", "speed_level": 1 },
+                { "text": "김치는 잘 익을수록 더 맛있어요.", "translation": "泡菜腌得越透越好吃。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "节日与传统",
+              "vocabularies": [
+                { "word": "명절", "reading": "myeongjeol", "translation": "传统节日", "example_sentence": "명절마다 고향에 내려가요." },
+                { "word": "차례", "reading": "charye", "translation": "祭祀", "example_sentence": "차례 음식을 준비했어요." },
+                { "word": "세뱃돈", "reading": "sebaetdon", "translation": "压岁钱", "example_sentence": "세뱃돈으로 저금을 했어요." },
+                { "word": "한복", "reading": "hanbok", "translation": "韩服", "example_sentence": "한복이 아주 우아해요." },
+                { "word": "풍습", "reading": "pungseup", "translation": "风俗", "example_sentence": "옛날부터 내려온 풍습이에요." },
+                { "word": "전통", "reading": "jeontong", "translation": "传统", "example_sentence": "전통 차를 마셔 봤어요." }
+              ],
+              "grammar_questions": [
+                { "stem": "설날에 차례를 ___.", "options": ["입어요", "받아요", "지내요", "들어요"], "answer": 2, "explanation": "「차례를 지내다」是固定搭配，意为『举行祭祀』。" },
+                { "stem": "지역___ 풍습이 달라요.", "options": ["에서", "을", "마다", "부터"], "answer": 2, "explanation": "「-마다」接在名词后表示『每……』。" },
+                { "stem": "아이들은 어른들께 세배를 하고 세뱃돈을 ___.", "options": ["보내요", "받아요", "입어요", "지내요"], "answer": 1, "explanation": "「받다」表示『收到』，压岁钱是长辈发给孩子的。" }
+              ],
+              "listening_materials": [
+                { "text": "설날에는 한복을 입고 어른들에게 세배를 해요.", "translation": "春节穿上韩服向长辈行岁拜礼。", "speed_level": 1 },
+                { "text": "정월 대보름에는 오곡밥과 나물을 먹는 풍습이 있어요.", "translation": "正月十五有吃五谷饭和野菜的风俗。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "影视与音乐",
+              "vocabularies": [
+                { "word": "드라마", "reading": "deurama", "translation": "电视剧", "example_sentence": "이 드라마 완전 재미있어요." },
+                { "word": "가수", "reading": "gasu", "translation": "歌手", "example_sentence": "그 가수 콘서트에 가 보고 싶어요." },
+                { "word": "공연", "reading": "gongyeon", "translation": "演出", "example_sentence": "공연장이 가득 찼어요." },
+                { "word": "감동", "reading": "gamdong", "translation": "感动", "example_sentence": "장면 하나하나가 감동이었어요." },
+                { "word": "관객", "reading": "gwangaek", "translation": "观众", "example_sentence": "관객이 크게 늘었어요." },
+                { "word": "유행", "reading": "yuhaeng", "translation": "流行", "example_sentence": "그 댄스가 요즘 유행이에요." }
+              ],
+              "grammar_questions": [
+                { "stem": "한국 드라마를 즐겨 ___.", "options": ["보내요", "보이다", "보여요", "봐요"], "answer": 3, "explanation": "「보다」接「-아요」时缩略为「봐요」，「즐겨 보다」意为『经常看』。" },
+                { "stem": "영화 결말이 ___.", "options": ["감동적이었어요", "감동하고", "감동하는", "감동됐어요"], "answer": 0, "explanation": "「감동적이다」的过去时是「감동적이었어요」，表示『很感人』。" },
+                { "stem": "관객들이 박수를 ___.", "options": ["입었어요", "쳤어요", "받았어요", "보냈어요"], "answer": 1, "explanation": "「박수를 치다」是固定搭配，意为『鼓掌』。" }
+              ],
+              "listening_materials": [
+                { "text": "주말에 친구랑 영화를 보러 갔어요. 감동적인 작품이었어요.", "translation": "周末和朋友去看电影了。是部感人的作品。", "speed_level": 1 },
+                { "text": "그 가수의 콘서트 표는 금방 매진됐어요.", "translation": "那位歌手的演唱会门票很快就售罄了。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "运动与休闲",
+              "vocabularies": [
+                { "word": "운동", "reading": "undong", "translation": "运动", "example_sentence": "일주일에 세 번 헬스장에서 운동해요." },
+                { "word": "등산", "reading": "deungsan", "translation": "登山", "example_sentence": "가을 산은 등산하기 좋아요." },
+                { "word": "건강", "reading": "geongang", "translation": "健康", "example_sentence": "건강이 제일이에요." },
+                { "word": "여유", "reading": "yeoyu", "translation": "悠闲", "example_sentence": "여유 있게 하루를 보내고 싶어요." },
+                { "word": "휴식", "reading": "hyusik", "translation": "休息", "example_sentence": "잠깐 휴식을 취할게요." },
+                { "word": "바쁘다", "reading": "bappeuda", "translation": "忙", "example_sentence": "요즘 어떻게 그렇게 바빠요?" }
+              ],
+              "grammar_questions": [
+                { "stem": "주말에 친구와 등산___ 갔어요.", "options": ["에", "을", "에서", "로"], "answer": 1, "explanation": "「등산을 가다」是惯用表达，表示『去登山』。" },
+                { "stem": "건강___ 위해 매일 걸어요.", "options": ["가", "의", "을", "에"], "answer": 2, "explanation": "「-을/를 위해서」表示目的，意为『为了……』。" },
+                { "stem": "요즘 일이 ___.", "options": ["바쁘어요", "바빠요", "바쁘세요", "바쁘아요"], "answer": 1, "explanation": "「바쁘다」的词干元音「ㅡ」脱落，接「-아요」变成「바빠요」。" }
+              ],
+              "listening_materials": [
+                { "text": "요즘 몸이 허해서 운동을 시작했어요.", "translation": "最近身体发虚，所以开始运动了。", "speed_level": 1 },
+                { "text": "스트레스가 쌓이면 산책하면서 풀어요.", "translation": "压力积攒时就边散步边化解。", "speed_level": 1 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "advanced",
+      "name": "提高",
+      "courses": [
+        {
+          "title": "新闻时事",
+          "description": "研读经济、社会与科技新闻，掌握正式书面表达。",
+          "lessons": [
+            {
+              "title": "经济新闻",
+              "vocabularies": [
+                { "word": "경제", "reading": "gyeongje", "translation": "经济", "example_sentence": "경제 지표가 발표되었어요." },
+                { "word": "물가", "reading": "mulga", "translation": "物价", "example_sentence": "물가 상승률이 눈에 띄게 높아졌어요." },
+                { "word": "투자", "reading": "tuja", "translation": "投资", "example_sentence": "스타트업에 대한 투자가 활발해요." },
+                { "word": "수출", "reading": "suchul", "translation": "出口", "example_sentence": "반도체 수출이 크게 늘었어요." },
+                { "word": "금리", "reading": "geumri", "translation": "利率", "example_sentence": "금리 인상이 가계에 부담이 되어요." },
+                { "word": "고용", "reading": "goyong", "translation": "雇佣", "example_sentence": "청년 고용 문제가 여전히 심각해요." }
+              ],
+              "grammar_questions": [
+                { "stem": "수출___ 전년 대비 증가했어요.", "options": ["를", "이", "에서", "로"], "answer": 1, "explanation": "「증가하다」的主语用主格助词「이/가」标记。" },
+                { "stem": "중앙은행이 금리를 ___.", "options": ["인상되었어요", "인상하여졌어요", "인상했어요", "인상되어요"], "answer": 2, "explanation": "「은행이 금리를 인상하다」是主动语态；被动句应为「금리가 인상되었다」。" },
+                { "stem": "물가가 계속 ___.", "options": ["오르어요", "오르자", "오르고 있어요", "오르세요"], "answer": 2, "explanation": "「-고 있다」表示动作正在进行或状态持续。" }
+              ],
+              "listening_materials": [
+                { "text": "정부는 내년 경제 성장률을 백 분의 이점 오로 전망했습니다.", "translation": "政府预测明年的经济增长率为2.5%。", "speed_level": 2 },
+                { "text": "최근 물가 상승으로 서민 가계의 부담이 커지고 있습니다.", "translation": "最近的物价上涨加重了普通家庭的负担。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "社会议题",
+              "vocabularies": [
+                { "word": "사회", "reading": "sahoe", "translation": "社会", "example_sentence": "고령화는 사회 전반에 영향을 미쳐요." },
+                { "word": "주거", "reading": "jugeo", "translation": "居住", "example_sentence": "주거 안정이 중요한 과제예요." },
+                { "word": "환경", "reading": "hwangyeong", "translation": "环境", "example_sentence": "환경 문제는 국경이 없어요." },
+                { "word": "세대", "reading": "sedae", "translation": "世代", "example_sentence": "젊은 세대의 목소리가 커지고 있어요." },
+                { "word": "정책", "reading": "jeongchaek", "translation": "政策", "example_sentence": "정책 효과를 평가해야 해요." },
+                { "word": "시급하다", "reading": "sigeuphada", "translation": "紧迫", "example_sentence": "대안 마련이 절실하고 시급해요." }
+              ],
+              "grammar_questions": [
+                { "stem": "환경 보호가 ___.", "options": ["시급하다요", "시급해요", "시급하는", "시급해서만"], "answer": 1, "explanation": "「시급하다」接「-해요」作谓语，意为『紧迫』。" },
+                { "stem": "세대___ 격차가 커지고 있어요.", "options": ["의", "에", "마다", "간"], "answer": 3, "explanation": "「-간」表示『……之间』，「세대 간 격차」即『代际差距』。" },
+                { "stem": "정부가 새로운 정책을 ___.", "options": ["발표되었어요", "발표했어요", "발표되어요", "발표하여졌어요"], "answer": 1, "explanation": "「정부가」是施动者，用主动语态；被动句应为「정책이 발표되었다」。" }
+              ],
+              "listening_materials": [
+                { "text": "청년층의 주거 문제를 해결하기 위한 정책이 논의되고 있습니다.", "translation": "解决青年层住房问题的政策正在讨论之中。", "speed_level": 2 },
+                { "text": "전문가들은 기후 변화 대응이 시급하다고 지적했습니다.", "translation": "专家们指出，应对气候变化刻不容缓。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "科技与环境",
+              "vocabularies": [
+                { "word": "기술", "reading": "gisul", "translation": "技术", "example_sentence": "최신 기술이 실생활에 적용되고 있어요." },
+                { "word": "발전", "reading": "baljeon", "translation": "发展", "example_sentence": "기술 발전이 일자리 구조를 바꾸고 있어요." },
+                { "word": "재활용", "reading": "jaehwalyong", "translation": "回收利用", "example_sentence": "분리배출이 재활용의 첫걸음이에요." },
+                { "word": "온실가스", "reading": "onsilgaseu", "translation": "温室气体", "example_sentence": "온실가스 감축 목표를 재설정했어요." },
+                { "word": "에너지", "reading": "eneoji", "translation": "能源", "example_sentence": "에너지 절약은 곧 비용 절감이에요." },
+                { "word": "탄소", "reading": "tanso", "translation": "碳", "example_sentence": "탄소 배출권 거래가 확대되고 있어요." }
+              ],
+              "grammar_questions": [
+                { "stem": "온실가스 배출을 ___.", "options": ["줄이 해요", "줄어야 해요", "줄개 해요", "줄여야 해요"], "answer": 3, "explanation": "「줄이다」是他动词『减少』；「-아/어야 하다」表示义务。" },
+                { "stem": "인공지능 기술___ 발전하고 있어요.", "options": ["를", "로", "이", "에서"], "answer": 2, "explanation": "「기술」以辅音「ㄹ」收尾，主格助词用「이」。" },
+                { "stem": "쓰레기를 재활용___.", "options": ["해야 해요", "되어야 해요", "하는 데요", "해서만 해요"], "answer": 0, "explanation": "「재활용하다」是他动词，宾语用「을/를」；「-해야 해요」表示义务。" }
+              ],
+              "listening_materials": [
+                { "text": "정부는 이삼오년까지 탄소 배출을 크게 줄이겠다고 밝혔습니다.", "translation": "政府表示将在2035年之前大幅减少碳排放。", "speed_level": 2 },
+                { "text": "재생 에너지 기술이 발전하면서 설치 비용이 점점 낮아지고 있습니다.", "translation": "随着可再生能源技术的发展，安装成本正逐渐降低。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "国际关系",
+              "vocabularies": [
+                { "word": "국제", "reading": "gukje", "translation": "国际", "example_sentence": "국제 사회의 목소리가 높아지고 있어요." },
+                { "word": "외교", "reading": "oegyo", "translation": "外交", "example_sentence": "외교 마찰이 이어지고 있어요." },
+                { "word": "협정", "reading": "hyeopjeong", "translation": "协定", "example_sentence": "양자 협정이 다시 논의되었어요." },
+                { "word": "회담", "reading": "hoedam", "translation": "会谈", "example_sentence": "정상 회담이 오늘 개최되었어요." },
+                { "word": "관계", "reading": "gwangye", "translation": "关系", "example_sentence": "우호적인 관계를 유지해 나가기로 했어요." },
+                { "word": "협력", "reading": "hyeomnyeok", "translation": "合作", "example_sentence": "기술 협력 범위를 넓히기로 했어요." }
+              ],
+              "grammar_questions": [
+                { "stem": "무역 협정___ 체결되었어요.", "options": ["를", "이", "으로", "에서"], "answer": 1, "explanation": "「체결되다」是被动形式，动作的承受者作主语。" },
+                { "stem": "양국 관계___ 개선되고 있어요.", "options": ["을", "에서", "로", "가"], "answer": 3, "explanation": "「개선되다」是被动形式，「관계」是主语，用「이/가」。" },
+                { "stem": "두 나라가 외교 관계를 ___.", "options": ["맺다가", "맺었어요", "맺어도", "맺는지"], "answer": 1, "explanation": "「관계를 맺다」是固定搭配，意为『建立关系』。" }
+              ],
+              "listening_materials": [
+                { "text": "양국은 무역과 환경 분야에서 협력을 강화하기로 했습니다.", "translation": "两国决定加强贸易与环境领域的合作。", "speed_level": 2 },
+                { "text": "이번 정상 회담에서 새로운 경제 협정이 체결되었습니다.", "translation": "在本次首脑会谈上签署了新的经济协定。", "speed_level": 2 }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "演讲与书面语",
+          "description": "训练演讲结构与论证逻辑，写出得体的高级语体。",
+          "lessons": [
+            {
+              "title": "演讲开场与致谢",
+              "vocabularies": [
+                { "word": "강연", "reading": "gangyeon", "translation": "讲座", "example_sentence": "다음 주에 특별 강연이 있습니다." },
+                { "word": "인사말", "reading": "insamal", "translation": "问候语", "example_sentence": "개회식에서 인사말을 맡았어요." },
+                { "word": "주제", "reading": "juje", "translation": "主题", "example_sentence": "주제를 벗어나지 않도록 주의하세요." },
+                { "word": "소개", "reading": "sogae", "translation": "介绍", "example_sentence": "발표자를 간략히 소개해 드리겠습니다." },
+                { "word": "감사하다", "reading": "gamsahada", "translation": "感谢", "example_sentence": "도움을 주신 분들께 감사합니다." },
+                { "word": "발표", "reading": "balpyo", "translation": "发表", "example_sentence": "연구 결과를 발표했습니다." }
+              ],
+              "grammar_questions": [
+                { "stem": "초대해 ___ 감사합니다.", "options": ["주셔도", "주셔서", "주더니", "주는"], "answer": 1, "explanation": "「-아/어 주셔서 감사합니다」是致谢的敬语表达，意为『承蒙您……』。" },
+                { "stem": "오늘 강연___ 시작하겠습니다.", "options": ["에서", "로", "을", "에"], "answer": 2, "explanation": "「시작하다」的宾语用宾格助词「을/를」标记。" },
+                { "stem": "발표___ 시작하겠습니다.", "options": ["를", "와", "에", "이"], "answer": 0, "explanation": "「발표」以元音收尾，宾格助词用「를」。" }
+              ],
+              "listening_materials": [
+                { "text": "안녕하십니까? 먼저 간단한 인사말씀을 올리겠습니다.", "translation": "大家好？首先请允许我简单致以问候。", "speed_level": 2 },
+                { "text": "오늘의 주제는 디지털 시대의 소통 방식입니다.", "translation": "今天的主题是数字时代的沟通方式。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "论证与逻辑连接",
+              "vocabularies": [
+                { "word": "논증", "reading": "nonjeung", "translation": "论证", "example_sentence": "논증 과정을 자세히 살펴보겠습니다." },
+                { "word": "근거", "reading": "geugeo", "translation": "依据", "example_sentence": "객관적인 근거를 제시해야 설득력이 생겨요." },
+                { "word": "반면", "reading": "banmyeon", "translation": "相反地", "example_sentence": "성과가 있었던 반면, 문제점도 드러났어요." },
+                { "word": "따라서", "reading": "ttaraseo", "translation": "因此", "example_sentence": "따라서 접근 방식을 바꿀 필요가 있습니다." },
+                { "word": "비록", "reading": "birok", "translation": "尽管", "example_sentence": "비록 시간이 걸리더라도 포기하지 않겠습니다." },
+                { "word": "결론", "reading": "gyeollon", "translation": "结论", "example_sentence": "쉽게 결론을 내리기 어려웠어요." }
+              ],
+              "grammar_questions": [
+                { "stem": "___ 어렵지만 해 볼 만해요.", "options": ["그래서", "그러나", "비록", "즉"], "answer": 2, "explanation": "「비록」与「-지만」呼应，表示让步，『虽然……但……』。" },
+                { "stem": "___ 대책이 필요합니다.", "options": ["따라서", "하지만", "그런데", "비록"], "answer": 0, "explanation": "「따라서」承接前文得出结论，意为『因此』。" },
+                { "stem": "그 주장에는 ___가 부족해요.", "options": ["근거를", "근거로", "근거에", "근거"], "answer": 3, "explanation": "「근거가 부족하다」是惯用表达，意为『依据不足』。" }
+              ],
+              "listening_materials": [
+                { "text": "이러한 데이터를 근거로 두 가지 방안을 제안하려고 합니다.", "translation": "以这些数据为依据，我想提出两个方案。", "speed_level": 2 },
+                { "text": "반면에 비용 문제를 우려하는 목소리도 적지 않습니다.", "translation": "另一方面，担忧费用问题的声音也不少。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "书面语体规范",
+              "vocabularies": [
+                { "word": "문어", "reading": "muneo", "translation": "书面语", "example_sentence": "공식 연설문은 문어체로 씁니다." },
+                { "word": "격식", "reading": "gyeoksik", "translation": "礼节；正式规范", "example_sentence": "행사 성격에 맞는 격식을 갖추세요." },
+                { "word": "용어", "reading": "yongeo", "translation": "术语", "example_sentence": "전문 용어는 뜻을 미리 확인하세요." },
+                { "word": "어법", "reading": "eobeop", "translation": "语法规范", "example_sentence": "어법이 틀리면 신뢰를 잃을 수 있어요." },
+                { "word": "간결하다", "reading": "gangyeolhada", "translation": "简洁", "example_sentence": "문장이 간결할수록 이해가 빠릅니다." },
+                { "word": "표현", "reading": "pyohyeon", "translation": "表达", "example_sentence": "상황에 맞는 표현을 선택해야 해요." }
+              ],
+              "grammar_questions": [
+                { "stem": "문장은 ___해야 해요.", "options": ["간결히", "간결한", "간결", "간결이"], "answer": 2, "explanation": "「간결하다」是形容词，作谓语时直接接「-해야 하다」。" },
+                { "stem": "어법___ 맞는 표현을 써야 해요.", "options": ["을", "에서", "에", "로"], "answer": 2, "explanation": "「어법에 맞다」是惯用搭配，意为『符合语法规范』。" },
+                { "stem": "어려운 용어___ 풀어서 설명했어요.", "options": ["이", "로부터", "에", "를"], "answer": 3, "explanation": "「용어를 풀다」意为『解释术语』，宾语用「를」。" }
+              ],
+              "listening_materials": [
+                { "text": "공식 문서에서는 개조식 문장을 쓰는 것이 일반적입니다.", "translation": "在正式文件中，一般使用条列式句子。", "speed_level": 2 },
+                { "text": "핵심 내용을 간결하게 정리하여 보고해 주시기 바랍니다.", "translation": "请将核心内容简明整理后进行汇报。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "总结与展望",
+              "vocabularies": [
+                { "word": "전망", "reading": "jeonmang", "translation": "展望", "example_sentence": "장기적으로 밝은 전망을 보이고 있어요." },
+                { "word": "기대", "reading": "gidae", "translation": "期待", "example_sentence": "앞으로의 성과에 큰 기대를 겁니다." },
+                { "word": "지속", "reading": "jisok", "translation": "持续", "example_sentence": "성장을 지속하려면 변화가 필요해요." },
+                { "word": "노력", "reading": "noryeok", "translation": "努力", "example_sentence": "이런 결과는 노력 없이는 얻을 수 없어요." },
+                { "word": "소망", "reading": "somang", "translation": "愿望", "example_sentence": "한 해의 소망을 적어 보았어요." },
+                { "word": "마무리", "reading": "mamuri", "translation": "收尾", "example_sentence": "발표를 마무리하기 전에 질문을 받겠습니다." }
+              ],
+              "grammar_questions": [
+                { "stem": "지속 ___ 발전이 필요해요.", "options": ["가능하게", "가능한", "가능이", "가능으로"], "answer": 1, "explanation": "「지속 가능한」是定语形式，修饰名词『发展』。" },
+                { "stem": "큰 기대___ 걸고 있어요.", "options": ["이", "를", "에서", "에"], "answer": 1, "explanation": "「기대를 걸다」是固定搭配，意为『寄予期待』。" },
+                { "stem": "발표를 ___하겠습니다.", "options": ["마무리가", "마무리", "마무리를", "마무리에"], "answer": 1, "explanation": "「마무리하다」表示『收尾』，「-하겠습니다」郑重宣告将要做的事。" }
+              ],
+              "listening_materials": [
+                { "text": "지금까지 말씀드린 내용을 간단히 정리하겠습니다.", "translation": "我来简单总结一下刚才讲述的内容。", "speed_level": 2 },
+                { "text": "여러분의 앞날에 좋은 일만 가득하길 기원합니다.", "translation": "祝愿各位前程似锦。", "speed_level": 2 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "placement_questions": [
+    { "level_tag": "beginner", "stem": "저___ 중국 사람입니다.", "options": ["는", "가", "을", "에서"], "answer": 0, "explanation": "「는」是主题助词，用于提示话题或介绍身份。" },
+    { "level_tag": "beginner", "stem": "빵 하나 ___.", "options": ["주세요", "가세요", "계세요", "보세요"], "answer": 0, "explanation": "「-아/어 주세요」表示礼貌的请求，『请给我……』。" },
+    { "level_tag": "beginner", "stem": "어제 친구를 만___.", "options": ["났어요", "나요", "날아요", "나서"], "answer": 0, "explanation": "「만나다」的过去式是「만났다」，非格式体为「만났어요」。" },
+    { "level_tag": "intermediate", "stem": "환경 문제___ 책을 읽었어요.", "options": ["에 대한", "을", "에", "로"], "answer": 0, "explanation": "「-에 대한 + 名词」作定语，意为『关于……的』。" },
+    { "level_tag": "intermediate", "stem": "내일까지 ___ 제출해 주세요.", "options": ["꼭", "별로", "조금도", "전혀"], "answer": 0, "explanation": "「꼭」意为『务必、一定』，用于强调请求；其余三个词用于否定句。" },
+    { "level_tag": "intermediate", "stem": "데이터를 ___ 결론을 내렸어요.", "options": ["근거로", "근거가", "근거를", "근거에"], "answer": 0, "explanation": "「-을 근거로」表示『以……为依据』。" },
+    { "level_tag": "advanced", "stem": "전문가들은 대응이 시급하다고 ___.", "options": ["지적했습니다", "지적해 달라고 했습니다", "지적하고 싶었습니다", "지적되고 있습니다"], "answer": 0, "explanation": "「-다고 지적하다」表示『指出……』，是新闻引述的常用句式。" },
+    { "level_tag": "advanced", "stem": "이 협정___ 내년부터 발효됩니다.", "options": ["은", "를", "에서", "으로"], "answer": 0, "explanation": "「발효되다」是被动形式，主语用「은/는」或「이/가」标记。" },
+    { "level_tag": "advanced", "stem": "공식 이메일에서는 문장을 ___ 쓰는 것이 좋습니다.", "options": ["간결하게", "간결한", "간결하다", "간결하고"], "answer": 0, "explanation": "修饰动词「쓰다」要用副词形式「간결하게」。" }
+  ]
+}

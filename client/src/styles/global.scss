@@ -1,0 +1,59 @@
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; margin: 0; padding: 0; }
+
+body {
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", "Yu Gothic", "Malgun Gothic", "Hiragino Sans", sans-serif;
+  background: #f5f7fb;
+  color: #26262b;
+}
+
+a { text-decoration: none; }
+
+/* 单词卡片 */
+.flip-card {
+  perspective: 1000px;
+  cursor: pointer;
+  min-height: 180px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  min-height: 180px;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+.flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+.flip-card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(30, 40, 90, 0.08);
+  background: #fff;
+}
+.flip-card-face.back { transform: rotateY(180deg); background: #eef2ff; }
+.flip-word { font-size: 26px; font-weight: 700; }
+.flip-reading { color: #888; margin-top: 4px; }
+.flip-translation { font-size: 20px; font-weight: 600; }
+.flip-example { margin-top: 10px; color: #555; font-size: 13px; text-align: center; }
+
+/* 徽章墙 */
+.badge-wall .badge-item {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  padding: 14px 8px; border-radius: 12px; background: #fff;
+  border: 1px solid #eef0f5;
+}
+.badge-wall .badge-item.locked { opacity: 0.45; filter: grayscale(0.9); }
+.badge-wall .badge-icon { font-size: 34px; }
+.badge-wall .badge-name { font-size: 13px; font-weight: 600; }
+
+/* 跟读卡片 */
+.speech-wave { font-size: 28px; letter-spacing: 4px; }
+
+.page-container { max-width: 1080px; margin: 0 auto; padding: 20px; }

@@ -1,0 +1,553 @@
+{
+  "code": "en",
+  "name": "英语",
+  "speech_locale": "en-US",
+  "emoji": "🇬🇧",
+  "levels": [
+    {
+      "level": "beginner",
+      "name": "入门",
+      "courses": [
+        {
+          "title": "问候与自我介绍",
+          "description": "从打招呼到介绍自己，掌握最基本的日常交际用语。",
+          "lessons": [
+            {
+              "title": "初次见面打招呼",
+              "vocabularies": [
+                { "word": "hello", "reading": "həˈloʊ", "translation": "你好", "example_sentence": "Hello, my name is Tom." },
+                { "word": "morning", "reading": "ˈmɔːrnɪŋ", "translation": "早晨", "example_sentence": "Good morning, everyone." },
+                { "word": "name", "reading": "neɪm", "translation": "名字", "example_sentence": "What is your name?" },
+                { "word": "meet", "reading": "miːt", "translation": "遇见；结识", "example_sentence": "Nice to meet you, Amy." },
+                { "word": "friend", "reading": "frend", "translation": "朋友", "example_sentence": "This is my friend Jack." },
+                { "word": "welcome", "reading": "ˈwelkəm", "translation": "欢迎", "example_sentence": "Welcome to our school." }
+              ],
+              "grammar_questions": [
+                { "stem": "___ name is Lily.", "options": ["My", "Me", "I", "Mine"], "answer": 0, "explanation": "修饰名词 name 要用形容词性物主代词 My。" },
+                { "stem": "Hello! How ___ you today?", "options": ["is", "am", "are", "be"], "answer": 2, "explanation": "主语 you 与 be 动词搭配一律用 are。" },
+                { "stem": "Nice to ___ you.", "options": ["meeting", "meets", "meet", "met"], "answer": 2, "explanation": "不定式符号 to 后接动词原形，构成固定表达 Nice to meet you。" }
+              ],
+              "listening_materials": [
+                { "text": "Hello! My name is Tom. What is your name?", "translation": "你好！我叫汤姆。你叫什么名字？", "speed_level": 0 },
+                { "text": "Good morning, Miss Li. Nice to meet you.", "translation": "早上好，李老师。很高兴认识你。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "介绍自己",
+              "vocabularies": [
+                { "word": "student", "reading": "ˈstuːdnt", "translation": "学生", "example_sentence": "I am a student at No. 5 Middle School." },
+                { "word": "teacher", "reading": "ˈtiːtʃər", "translation": "老师", "example_sentence": "My mother is a teacher." },
+                { "word": "from", "reading": "frʌm", "translation": "来自", "example_sentence": "I come from Beijing." },
+                { "word": "year", "reading": "jɪr", "translation": "岁；年", "example_sentence": "I am twelve years old." },
+                { "word": "class", "reading": "klæs", "translation": "班级", "example_sentence": "We are in the same class." },
+                { "word": "hobby", "reading": "ˈhɑːbi", "translation": "爱好", "example_sentence": "My hobby is reading books." }
+              ],
+              "grammar_questions": [
+                { "stem": "I ___ from Shanghai.", "options": ["am", "is", "are", "be"], "answer": 0, "explanation": "主语 I 与 be 动词搭配用 am。" },
+                { "stem": "She ___ a new student.", "options": ["am", "is", "are", "being"], "answer": 1, "explanation": "主语 she 是第三人称单数，be 动词用 is。" },
+                { "stem": "My sister and I ___ in Class Two.", "options": ["is", "am", "are", "was"], "answer": 2, "explanation": "并列主语 My sister and I 是复数，be 动词用 are。" }
+              ],
+              "listening_materials": [
+                { "text": "Hi, I am Lily. I am from China. I am thirteen years old.", "translation": "嗨，我是莉莉。我来自中国。我十三岁。", "speed_level": 0 },
+                { "text": "This is my friend Jack. He is in my class.", "translation": "这是我的朋友杰克。他在我的班里。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "询问个人信息",
+              "vocabularies": [
+                { "word": "where", "reading": "wer", "translation": "哪里", "example_sentence": "Where are you from?" },
+                { "word": "live", "reading": "lɪv", "translation": "居住", "example_sentence": "I live in Guangzhou with my parents." },
+                { "word": "phone", "reading": "foʊn", "translation": "电话", "example_sentence": "May I have your phone number?" },
+                { "word": "number", "reading": "ˈnʌmbər", "translation": "数字；号码", "example_sentence": "My phone number is 12345678." },
+                { "word": "old", "reading": "oʊld", "translation": "……岁的；旧的", "example_sentence": "How old is your brother?" },
+                { "word": "family", "reading": "ˈfæməli", "translation": "家庭", "example_sentence": "There are four people in my family." }
+              ],
+              "grammar_questions": [
+                { "stem": "— ___ do you live? — In Nanjing.", "options": ["What", "Where", "Who", "When"], "answer": 1, "explanation": "回答是地点 In Nanjing，提问地点用疑问词 Where。" },
+                { "stem": "— ___ is your sister? — She is ten.", "options": ["How many", "How old", "How much", "How long"], "answer": 1, "explanation": "回答是年龄，询问年龄用 How old。" },
+                { "stem": "There ___ three people in my family.", "options": ["is", "are", "am", "be"], "answer": 1, "explanation": "there be 句型中 be 动词与后面的名词保持一致，three people 是复数，用 are。" }
+              ],
+              "listening_materials": [
+                { "text": "Where do you live? I live in Guangzhou.", "translation": "你住在哪里？我住在广州。", "speed_level": 0 },
+                { "text": "How old are you? I am twelve years old.", "translation": "你多大了？我十二岁。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "道别与致谢",
+              "vocabularies": [
+                { "word": "goodbye", "reading": "ˌɡʊdˈbaɪ", "translation": "再见", "example_sentence": "Goodbye! See you tomorrow." },
+                { "word": "thanks", "reading": "θæŋks", "translation": "谢谢", "example_sentence": "Thanks for your help." },
+                { "word": "sure", "reading": "ʃʊr", "translation": "当然", "example_sentence": "—Can you help me? —Sure." },
+                { "word": "sorry", "reading": "ˈsɑːri", "translation": "抱歉的", "example_sentence": "I am sorry, I am late." },
+                { "word": "tomorrow", "reading": "təˈmɑːroʊ", "translation": "明天", "example_sentence": "I will finish my homework tomorrow." },
+                { "word": "help", "reading": "help", "translation": "帮助", "example_sentence": "Can you help me with my homework?" }
+              ],
+              "grammar_questions": [
+                { "stem": "— Thank you very much. — ___", "options": ["You are welcome.", "I am fine.", "Yes, please.", "No way."], "answer": 0, "explanation": "回答对方的感谢用 You are welcome（不客气）。" },
+                { "stem": "It's late. ___ go home now.", "options": ["Let's", "We", "Let", "Us"], "answer": 0, "explanation": "Let's 后接动词原形，表示提建议：让我们回家吧。" },
+                { "stem": "___! The bus is coming.", "options": ["Look", "Looks", "Looking", "Looked"], "answer": 0, "explanation": "祈使句以动词原形开头，表示提醒或命令。" }
+              ],
+              "listening_materials": [
+                { "text": "Goodbye, Tom! See you tomorrow.", "translation": "再见，汤姆！明天见。", "speed_level": 0 },
+                { "text": "Thank you for your help. You are welcome.", "translation": "谢谢你的帮助。不客气。", "speed_level": 0 }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "日常生活",
+          "description": "围绕家庭、饮食、作息与购物，学会谈论日常生活。",
+          "lessons": [
+            {
+              "title": "我的家庭",
+              "vocabularies": [
+                { "word": "father", "reading": "ˈfɑːðər", "translation": "爸爸", "example_sentence": "My father is a doctor." },
+                { "word": "mother", "reading": "ˈmʌðər", "translation": "妈妈", "example_sentence": "My mother cooks dinner every day." },
+                { "word": "brother", "reading": "ˈbrʌðər", "translation": "哥哥；弟弟", "example_sentence": "My brother likes playing basketball." },
+                { "word": "sister", "reading": "ˈsɪstər", "translation": "姐姐；妹妹", "example_sentence": "My sister is only five years old." },
+                { "word": "doctor", "reading": "ˈdɑːktər", "translation": "医生", "example_sentence": "The doctor works in a big hospital." },
+                { "word": "like", "reading": "laɪk", "translation": "喜欢", "example_sentence": "I like music very much." }
+              ],
+              "grammar_questions": [
+                { "stem": "My brother ___ sports after school.", "options": ["play", "plays", "playing", "played"], "answer": 1, "explanation": "主语 my brother 是第三人称单数，一般现在时动词加 -s。" },
+                { "stem": "She ___ like coffee.", "options": ["don't", "doesn't", "isn't", "not"], "answer": 1, "explanation": "第三人称单数否定要借助 doesn't，后接动词原形 like。" },
+                { "stem": "___ your father a doctor?", "options": ["Is", "Are", "Am", "Do"], "answer": 0, "explanation": "主语 your father 是第三人称单数，be 动词用 Is 并提前构成一般疑问句。" }
+              ],
+              "listening_materials": [
+                { "text": "My mother is a teacher and my father is a doctor.", "translation": "我妈妈是老师，我爸爸是医生。", "speed_level": 0 },
+                { "text": "I have one brother and two sisters.", "translation": "我有一个哥哥和两个妹妹。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "食物与点餐",
+              "vocabularies": [
+                { "word": "rice", "reading": "raɪs", "translation": "米饭", "example_sentence": "I would like some rice and fish." },
+                { "word": "bread", "reading": "bred", "translation": "面包", "example_sentence": "I have bread and milk for breakfast." },
+                { "word": "egg", "reading": "eɡ", "translation": "鸡蛋", "example_sentence": "She eats an egg every morning." },
+                { "word": "water", "reading": "ˈwɔːtər", "translation": "水", "example_sentence": "Can I have a glass of water?" },
+                { "word": "apple", "reading": "ˈæpl", "translation": "苹果", "example_sentence": "An apple a day keeps the doctor away." },
+                { "word": "hungry", "reading": "ˈhʌŋɡri", "translation": "饥饿的", "example_sentence": "I am hungry. Let's eat lunch." }
+              ],
+              "grammar_questions": [
+                { "stem": "I want ___ apple, please.", "options": ["a", "an", "the", "two"], "answer": 1, "explanation": "apple 以元音音素开头，表示“一个”要用冠词 an。" },
+                { "stem": "There ___ some milk in the glass.", "options": ["is", "are", "am", "have"], "answer": 0, "explanation": "milk 是不可数名词，there be 句型中用 is。" },
+                { "stem": "How ___ bread do you want?", "options": ["many", "much", "old", "long"], "answer": 1, "explanation": "bread 是不可数名词，提问数量用 How much。" }
+              ],
+              "listening_materials": [
+                { "text": "I am hungry. I would like some bread and milk.", "translation": "我饿了。我想要一些面包和牛奶。", "speed_level": 0 },
+                { "text": "Can I have a glass of water, please?", "translation": "请给我一杯水好吗？", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "一天的作息",
+              "vocabularies": [
+                { "word": "breakfast", "reading": "ˈbrekfəst", "translation": "早餐", "example_sentence": "I have breakfast at seven thirty." },
+                { "word": "usually", "reading": "ˈjuːʒuəli", "translation": "通常", "example_sentence": "I usually go to school by bus." },
+                { "word": "early", "reading": "ˈɜːrli", "translation": "早的；早地", "example_sentence": "I get up early every day." },
+                { "word": "evening", "reading": "ˈiːvnɪŋ", "translation": "晚上", "example_sentence": "We do homework in the evening." },
+                { "word": "o'clock", "reading": "əˈklɑːk", "translation": "……点钟", "example_sentence": "The class begins at eight o'clock." },
+                { "word": "weekend", "reading": "ˈwiːkend", "translation": "周末", "example_sentence": "I visit my grandparents on weekends." }
+              ],
+              "grammar_questions": [
+                { "stem": "He ___ gets up at six.", "options": ["usual", "usually", "uses", "useful"], "answer": 1, "explanation": "修饰动词 gets up 要用频率副词 usually。" },
+                { "stem": "I go to school ___ seven o'clock.", "options": ["in", "on", "at", "for"], "answer": 2, "explanation": "具体时刻前用介词 at。" },
+                { "stem": "She ___ to bed at ten every night.", "options": ["go", "goes", "going", "gone"], "answer": 1, "explanation": "主语 she 是第三人称单数，一般现在时动词 go 变 goes。" }
+              ],
+              "listening_materials": [
+                { "text": "I usually get up at six thirty and have breakfast at seven.", "translation": "我通常六点半起床，七点吃早餐。", "speed_level": 0 },
+                { "text": "We play football on weekends.", "translation": "我们周末踢足球。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "购物",
+              "vocabularies": [
+                { "word": "buy", "reading": "baɪ", "translation": "买", "example_sentence": "I want to buy a new schoolbag." },
+                { "word": "cheap", "reading": "tʃiːp", "translation": "便宜的", "example_sentence": "This pen is cheap but nice." },
+                { "word": "expensive", "reading": "ɪkˈspensɪv", "translation": "昂贵的", "example_sentence": "That coat is too expensive for me." },
+                { "word": "shop", "reading": "ʃɑːp", "translation": "商店", "example_sentence": "There is a shop near my home." },
+                { "word": "clothes", "reading": "kloʊðz", "translation": "衣服", "example_sentence": "Mother buys clothes for me." },
+                { "word": "much", "reading": "mʌtʃ", "translation": "（价格）多少；许多", "example_sentence": "How much is this T-shirt?" }
+              ],
+              "grammar_questions": [
+                { "stem": "How ___ is this dictionary?", "options": ["many", "much", "about", "old"], "answer": 1, "explanation": "询问价格用 How much。" },
+                { "stem": "This shirt is ___ cheaper than that one.", "options": ["much", "very", "more", "most"], "answer": 0, "explanation": "比较级 cheaper 前可用 much 加强程度，意为“……得多”。" },
+                { "stem": "I want ___ a book about animals.", "options": ["buy", "to buy", "buying", "bought"], "answer": 1, "explanation": "want 后接不定式 to do，表示想要做某事。" }
+              ],
+              "listening_materials": [
+                { "text": "How much is this hat? It is twenty yuan.", "translation": "这顶帽子多少钱？二十元。", "speed_level": 0 },
+                { "text": "These shoes are too expensive. I want to buy a cheap pair.", "translation": "这双鞋太贵了。我想买一双便宜的。", "speed_level": 0 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "intermediate",
+      "name": "进阶",
+      "courses": [
+        {
+          "title": "旅行与工作",
+          "description": "在机场、酒店与职场情境中提升综合表达能力。",
+          "lessons": [
+            {
+              "title": "机场出行",
+              "vocabularies": [
+                { "word": "flight", "reading": "flaɪt", "translation": "航班", "example_sentence": "Our flight to London takes off at nine." },
+                { "word": "passport", "reading": "ˈpæspɔːrt", "translation": "护照", "example_sentence": "Please show me your passport." },
+                { "word": "luggage", "reading": "ˈlʌɡɪdʒ", "translation": "行李", "example_sentence": "I have two pieces of luggage." },
+                { "word": "board", "reading": "bɔːrd", "translation": "登上（飞机、船等）", "example_sentence": "Passengers can board the plane at Gate 5." },
+                { "word": "delay", "reading": "dɪˈleɪ", "translation": "延误；推迟", "example_sentence": "The heavy fog delayed our flight." },
+                { "word": "arrive", "reading": "əˈraɪv", "translation": "到达", "example_sentence": "We will arrive in Paris at noon." }
+              ],
+              "grammar_questions": [
+                { "stem": "The plane ___ off ten minutes ago.", "options": ["takes", "took", "has taken", "taking"], "answer": 1, "explanation": "与表示过去的时间状语 ten minutes ago 连用，用一般过去时 took。" },
+                { "stem": "I ___ my passport yet.", "options": ["didn't find", "haven't found", "don't find", "won't find"], "answer": 1, "explanation": "与 yet 连用表示到目前为止的结果，用现在完成时 haven't found。" },
+                { "stem": "We look forward to ___ from you soon.", "options": ["hear", "hearing", "heard", "be heard"], "answer": 1, "explanation": "look forward to 中的 to 是介词，后接动名词 hearing。" }
+              ],
+              "listening_materials": [
+                { "text": "Excuse me, when does Flight CA985 board?", "translation": "打扰一下，CA985 航班什么时候登机？", "speed_level": 1 },
+                { "text": "Our flight was delayed for two hours because of the storm.", "translation": "由于暴风雨，我们的航班延误了两个小时。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "酒店入住",
+              "vocabularies": [
+                { "word": "reserve", "reading": "rɪˈzɜːrv", "translation": "预订", "example_sentence": "I have reserved a double room for three nights." },
+                { "word": "reception", "reading": "rɪˈsepʃn", "translation": "前台；接待处", "example_sentence": "Please leave your key at the reception." },
+                { "word": "available", "reading": "əˈveɪləbl", "translation": "可用的；空余的", "example_sentence": "Is there a single room available tonight?" },
+                { "word": "facilities", "reading": "fəˈsɪlətiz", "translation": "设施", "example_sentence": "The hotel has excellent sports facilities." },
+                { "word": "check", "reading": "tʃek", "translation": "检查；办理（入住/退房）", "example_sentence": "We check out before twelve at noon." },
+                { "word": "lift", "reading": "lɪft", "translation": "电梯", "example_sentence": "Take the lift to the tenth floor." }
+              ],
+              "grammar_questions": [
+                { "stem": "A room ___ the sea costs more.", "options": ["face", "facing", "faced", "to face"], "answer": 1, "explanation": "现在分词 facing 作后置定语，表示主动关系“朝向大海的房间”。" },
+                { "stem": "By the time we arrived, the hotel ___ full.", "options": ["is", "was", "had been", "has been"], "answer": 2, "explanation": "到达之前酒店已经住满，“过去的过去”用过去完成时 had been。" },
+                { "stem": "Could you tell me ___ the lift is?", "options": ["that", "where", "how", "what"], "answer": 1, "explanation": "宾语从句询问地点，用连接副词 where 引导。" }
+              ],
+              "listening_materials": [
+                { "text": "I would like to check in. I have reserved a double room.", "translation": "我想办理入住。我预订了一间双人房。", "speed_level": 1 },
+                { "text": "Breakfast is served from seven to ten in the dining hall.", "translation": "早餐七点到十点在餐厅供应。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "求职面试",
+              "vocabularies": [
+                { "word": "interview", "reading": "ˈɪntərvjuː", "translation": "面试；采访", "example_sentence": "She performed well in the job interview." },
+                { "word": "experience", "reading": "ɪkˈspɪriəns", "translation": "经验；经历", "example_sentence": "He has five years of teaching experience." },
+                { "word": "position", "reading": "pəˈzɪʃn", "translation": "职位", "example_sentence": "I am applying for the position of engineer." },
+                { "word": "apply", "reading": "əˈplaɪ", "translation": "申请", "example_sentence": "You can apply for the job online." },
+                { "word": "confidence", "reading": "ˈkɑːnfɪdəns", "translation": "自信；信心", "example_sentence": "Answer the questions with confidence." },
+                { "word": "salary", "reading": "ˈsæləri", "translation": "薪水", "example_sentence": "They offered him a higher salary." }
+              ],
+              "grammar_questions": [
+                { "stem": "She ___ in this company since 2019.", "options": ["works", "worked", "has worked", "had worked"], "answer": 2, "explanation": "与 since 引导的时间连用，表示从过去持续到现在，用现在完成时。" },
+                { "stem": "He is used to ___ under pressure.", "options": ["work", "working", "worked", "works"], "answer": 1, "explanation": "be used to 中的 to 是介词，后接动名词 working，表示习惯于做某事。" },
+                { "stem": "If I ___ you, I would accept the offer.", "options": ["am", "be", "was", "were"], "answer": 3, "explanation": "与现在事实相反的虚拟语气，be 动词一律用 were。" }
+              ],
+              "listening_materials": [
+                { "text": "Thank you for coming. Please tell me about your work experience.", "translation": "谢谢你前来面试。请谈谈你的工作经历。", "speed_level": 1 },
+                { "text": "I have applied for the position of sales manager.", "translation": "我申请了销售经理的职位。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "职场沟通",
+              "vocabularies": [
+                { "word": "meeting", "reading": "ˈmiːtɪŋ", "translation": "会议", "example_sentence": "The weekly meeting starts at nine sharp." },
+                { "word": "schedule", "reading": "ˈskedʒuːl", "translation": "日程；安排", "example_sentence": "Could we schedule a call for Friday?" },
+                { "word": "colleague", "reading": "ˈkɑːliːɡ", "translation": "同事", "example_sentence": "My colleagues are very supportive." },
+                { "word": "deadline", "reading": "ˈdedlaɪn", "translation": "截止日期", "example_sentence": "We must finish the report before the deadline." },
+                { "word": "promote", "reading": "prəˈmoʊt", "translation": "晋升；提升", "example_sentence": "She was promoted to team leader last month." },
+                { "word": "attend", "reading": "əˈtend", "translation": "参加；出席", "example_sentence": "All staff must attend the training." }
+              ],
+              "grammar_questions": [
+                { "stem": "The report ___ by the whole team yesterday.", "options": ["wrote", "was written", "has written", "writing"], "answer": 1, "explanation": "报告是“被写”的，与 yesterday 连用，用一般过去时的被动语态 was written。" },
+                { "stem": "He suggested ___ the meeting until Monday.", "options": ["postpone", "to postpone", "postponing", "postponed"], "answer": 2, "explanation": "suggest 后接动名词作宾语，即 suggest doing sth。" },
+                { "stem": "This is the manager ___ joined us last month.", "options": ["which", "who", "whom", "whose"], "answer": 1, "explanation": "先行词 manager 指人，且在定语从句中作主语，用关系代词 who。" }
+              ],
+              "listening_materials": [
+                { "text": "Could we reschedule the meeting to three o'clock this afternoon?", "translation": "我们能把会议改到今天下午三点吗？", "speed_level": 1 },
+                { "text": "Please send me the report before the deadline on Friday.", "translation": "请在周五截止日期前把报告发给我。", "speed_level": 1 }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "观点表达",
+          "description": "学会表达偏好、赞成与反对、讲述经历并提出建议。",
+          "lessons": [
+            {
+              "title": "表达喜好与偏好",
+              "vocabularies": [
+                { "word": "prefer", "reading": "prɪˈfɜːr", "translation": "更喜欢", "example_sentence": "I prefer tea to coffee in the morning." },
+                { "word": "enjoy", "reading": "ɪnˈdʒɔɪ", "translation": "享受；喜爱", "example_sentence": "I really enjoy hiking in the mountains." },
+                { "word": "opinion", "reading": "əˈpɪnjən", "translation": "观点；看法", "example_sentence": "In my opinion, the film is worth watching." },
+                { "word": "taste", "reading": "teɪst", "translation": "品味；味道", "example_sentence": "Everyone has his own taste in music." },
+                { "word": "favorite", "reading": "ˈfeɪvərɪt", "translation": "最喜爱的", "example_sentence": "Swimming is my favorite sport." },
+                { "word": "keen", "reading": "kiːn", "translation": "热衷的；渴望的", "example_sentence": "She is keen on photography." }
+              ],
+              "grammar_questions": [
+                { "stem": "I would rather ___ at home tonight.", "options": ["stay", "to stay", "staying", "stayed"], "answer": 0, "explanation": "would rather 后接动词原形，表示宁愿做某事。" },
+                { "stem": "He is fond of ___ old coins.", "options": ["collect", "collecting", "collected", "collects"], "answer": 1, "explanation": "介词 of 后接动名词 collecting 作宾语。" },
+                { "stem": "Neither of the two films ___ interesting.", "options": ["is", "are", "am", "be"], "answer": 0, "explanation": "neither 作主语时谓语动词用单数形式。" }
+              ],
+              "listening_materials": [
+                { "text": "To be honest, I prefer reading at home to going out.", "translation": "说实话，比起出门我更喜欢在家读书。", "speed_level": 1 },
+                { "text": "In my opinion, this is the best restaurant in town.", "translation": "在我看来，这是镇上最好的餐厅。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "同意与异议",
+              "vocabularies": [
+                { "word": "agree", "reading": "əˈɡriː", "translation": "同意", "example_sentence": "I couldn't agree with you more." },
+                { "word": "disagree", "reading": "ˌdɪsəˈɡriː", "translation": "不同意", "example_sentence": "I'm afraid I disagree with that idea." },
+                { "word": "point", "reading": "pɔɪnt", "translation": "观点；道理", "example_sentence": "You have a point, but it costs too much." },
+                { "word": "argument", "reading": "ˈɑːrɡjumənt", "translation": "论点；争论", "example_sentence": "Her argument sounds convincing." },
+                { "word": "convince", "reading": "kənˈvɪns", "translation": "说服；使确信", "example_sentence": "He convinced me to change my plan." },
+                { "word": "honestly", "reading": "ˈɑːnɪstli", "translation": "诚实地；说实话", "example_sentence": "Honestly, I don't think it will work." }
+              ],
+              "grammar_questions": [
+                { "stem": "Not only I but also my parents ___ the plan.", "options": ["support", "supports", "has supported", "is supporting"], "answer": 0, "explanation": "not only...but also 连接主语时，谓语与最近的主语 my parents 保持一致，用复数。" },
+                { "stem": "I don't think he ___ right.", "options": ["is", "isn't", "are", "not"], "answer": 0, "explanation": "think 引导的宾语从句否定前移，从句本身用肯定形式 is。" },
+                { "stem": "___ the cost is high, many people still support the project.", "options": ["Because", "Although", "Unless", "Until"], "answer": 1, "explanation": "前后语义转折，用 Although 引导让步状语从句。" }
+              ],
+              "listening_materials": [
+                { "text": "That's a good point, but I still think the price is too high.", "translation": "这话有道理，但我还是觉得价格太高。", "speed_level": 1 },
+                { "text": "I'm afraid I have to disagree with you on this issue.", "translation": "恐怕在这个问题上我不同意你的看法。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "讲述经历",
+              "vocabularies": [
+                { "word": "journey", "reading": "ˈdʒɜːrni", "translation": "旅程", "example_sentence": "The journey across the desert was unforgettable." },
+                { "word": "unforgettable", "reading": "ˌʌnfərˈɡetəbl", "translation": "难忘的", "example_sentence": "It was an unforgettable summer for me." },
+                { "word": "volunteer", "reading": "ˌvɑːlənˈtɪr", "translation": "志愿者", "example_sentence": "I worked as a volunteer at the school." },
+                { "word": "challenge", "reading": "ˈtʃælɪndʒ", "translation": "挑战", "example_sentence": "Learning a new language is a big challenge." },
+                { "word": "overcome", "reading": "ˌoʊvərˈkʌm", "translation": "克服", "example_sentence": "She overcame her fear of speaking in public." },
+                { "word": "memory", "reading": "ˈmeməri", "translation": "回忆；记忆", "example_sentence": "The old photos brought back sweet memories." }
+              ],
+              "grammar_questions": [
+                { "stem": "I ___ in Africa when I was young.", "options": ["have lived", "lived", "live", "had lived"], "answer": 1, "explanation": "when I was young 是明确的过去时间，用一般过去时 lived。" },
+                { "stem": "By the age of twenty, he ___ three countries.", "options": ["visited", "has visited", "had visited", "was visiting"], "answer": 2, "explanation": "by the age of twenty 表示到过去某时为止，用过去完成时 had visited。" },
+                { "stem": "This is the most exciting trip that I ___ taken.", "options": ["have", "had", "has", "having"], "answer": 0, "explanation": "“这是（至今）最……的经历”用现在完成时，主语 I 配 have。" }
+              ],
+              "listening_materials": [
+                { "text": "Last summer I volunteered in a village school for a month.", "translation": "去年夏天我在一所乡村学校做了一个月志愿者。", "speed_level": 1 },
+                { "text": "It was a wonderful journey and I made many new friends.", "translation": "那是一次美妙的旅程，我结识了许多新朋友。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "提出建议",
+              "vocabularies": [
+                { "word": "suggest", "reading": "səˈdʒest", "translation": "建议", "example_sentence": "I suggest starting the project earlier." },
+                { "word": "advice", "reading": "ədˈvaɪs", "translation": "建议（不可数）", "example_sentence": "She gave me some useful advice." },
+                { "word": "recommend", "reading": "ˌrekəˈmend", "translation": "推荐；建议", "example_sentence": "Can you recommend a good hotel nearby?" },
+                { "word": "consider", "reading": "kənˈsɪdər", "translation": "考虑", "example_sentence": "You should consider his suggestion seriously." },
+                { "word": "worth", "reading": "wɜːrθ", "translation": "值得的", "example_sentence": "The museum is worth a visit." },
+                { "word": "instead", "reading": "ɪnˈsted", "translation": "代替；反而", "example_sentence": "Let's walk there instead of taking a bus." }
+              ],
+              "grammar_questions": [
+                { "stem": "The teacher suggested that he ___ more careful.", "options": ["is", "was", "be", "would be"], "answer": 2, "explanation": "suggest 后的宾语从句用虚拟语气，即 (should) + 动词原形 be。" },
+                { "stem": "It is no use ___ about the weather.", "options": ["complain", "to complain", "complaining", "complained"], "answer": 2, "explanation": "固定句型 It is no use doing sth，表示“做某事没有用”。" },
+                { "stem": "You had better ___ a taxi, or you'll be late.", "options": ["take", "to take", "taking", "took"], "answer": 0, "explanation": "had better 后接动词原形，表示最好做某事。" }
+              ],
+              "listening_materials": [
+                { "text": "If I were you, I would take his advice and start early.", "translation": "如果我是你，我会听取他的建议早点出发。", "speed_level": 1 },
+                { "text": "Why not join us? The more, the merrier.", "translation": "为什么不加入我们呢？人越多越开心。", "speed_level": 1 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "advanced",
+      "name": "提高",
+      "courses": [
+        {
+          "title": "新闻时事",
+          "description": "通过环境、科技、经济与社会议题，掌握高级新闻词汇与复杂句式。",
+          "lessons": [
+            {
+              "title": "环境与气候",
+              "vocabularies": [
+                { "word": "emission", "reading": "ɪˈmɪʃn", "translation": "排放；排放物", "example_sentence": "The government aims to cut carbon emissions by half." },
+                { "word": "renewable", "reading": "rɪˈnuːəbl", "translation": "可再生的", "example_sentence": "Solar power is a clean and renewable source of energy." },
+                { "word": "sustainability", "reading": "səˌsteɪnəˈbɪləti", "translation": "可持续性", "example_sentence": "Sustainability should be at the heart of urban planning." },
+                { "word": "biodiversity", "reading": "ˌbaɪoʊdaɪˈvɜːrsəti", "translation": "生物多样性", "example_sentence": "Deforestation poses a serious threat to biodiversity." },
+                { "word": "drought", "reading": "draʊt", "translation": "干旱", "example_sentence": "The worst drought in decades hit the region last year." },
+                { "word": "mitigate", "reading": "ˈmɪtɪɡeɪt", "translation": "缓解；减轻", "example_sentence": "Planting trees can help mitigate the effects of climate change." }
+              ],
+              "grammar_questions": [
+                { "stem": "Had the government acted earlier, the crisis ___ less severe.", "options": ["would be", "would have been", "will be", "was"], "answer": 1, "explanation": "省略 if 的虚拟条件句表示与过去事实相反，主句用 would have been。" },
+                { "stem": "It is high time that we ___ fossil fuels.", "options": ["phase out", "phased out", "are phasing out", "have phased out"], "answer": 1, "explanation": "It is high time that 后接一般过去式，表示“该是……的时候了”。" },
+                { "stem": "Rarely ___ such rapid warming of the oceans.", "options": ["we have seen", "have we seen", "we saw", "saw we"], "answer": 1, "explanation": "否定意义副词 rarely 位于句首时，句子用部分倒装 have we seen。" }
+              ],
+              "listening_materials": [
+                { "text": "Carbon emissions must fall sharply if we are to avoid the worst effects of climate change.", "translation": "如果我们要避免气候变化带来的最坏影响，碳排放必须大幅下降。", "speed_level": 2 },
+                { "text": "The government has pledged to invest more in renewable energy.", "translation": "政府已承诺加大对可再生能源的投资。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "科技与人工智能",
+              "vocabularies": [
+                { "word": "algorithm", "reading": "ˈælɡərɪðəm", "translation": "算法", "example_sentence": "The algorithm behind the search engine is highly complex." },
+                { "word": "automate", "reading": "ˈɔːtəmeɪt", "translation": "使自动化", "example_sentence": "Robots now automate many tasks on the production line." },
+                { "word": "innovation", "reading": "ˌɪnəˈveɪʃn", "translation": "创新", "example_sentence": "Technological innovation drives economic growth." },
+                { "word": "privacy", "reading": "ˈpraɪvəsi", "translation": "隐私", "example_sentence": "The app was criticized for invading users' privacy." },
+                { "word": "breakthrough", "reading": "ˈbreɪkθruː", "translation": "突破", "example_sentence": "Scientists announced a major breakthrough in gene editing." },
+                { "word": "surveillance", "reading": "sɜːrˈveɪləns", "translation": "监控", "example_sentence": "Widespread surveillance raises serious ethical questions." }
+              ],
+              "grammar_questions": [
+                { "stem": "___ with a difficult problem, the engineer turned to his AI assistant.", "options": ["Faced", "Facing", "To face", "Face"], "answer": 0, "explanation": "be faced with 表示“面临”，作状语时用过去分词 Faced。" },
+                { "stem": "The information ___ by millions of devices every day.", "options": ["collect", "is collected", "collects", "are collected"], "answer": 1, "explanation": "information 是不可数名词且与 collect 是被动关系，用一般现在时被动 is collected。" },
+                { "stem": "___ matters most is how humans adapt to the new technology.", "options": ["That", "What", "Which", "It"], "answer": 1, "explanation": "主语从句中缺少主语，指代“最重要的东西”，用 What 引导。" }
+              ],
+              "listening_materials": [
+                { "text": "Artificial intelligence is transforming the way we work and live.", "translation": "人工智能正在改变我们工作和生活的方式。", "speed_level": 2 },
+                { "text": "Experts warn that new technologies must be regulated to protect personal privacy.", "translation": "专家警告说，必须对新技术加以监管以保护个人隐私。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "经济与商业",
+              "vocabularies": [
+                { "word": "inflation", "reading": "ɪnˈfleɪʃn", "translation": "通货膨胀", "example_sentence": "Inflation climbed to its highest level in a decade." },
+                { "word": "recession", "reading": "rɪˈseʃn", "translation": "经济衰退", "example_sentence": "The country slid into a deep recession last year." },
+                { "word": "investment", "reading": "ɪnˈvestmənt", "translation": "投资", "example_sentence": "Foreign investment in the region has doubled." },
+                { "word": "consumer", "reading": "kənˈsuːmər", "translation": "消费者", "example_sentence": "Consumers are spending less on luxury goods." },
+                { "word": "fluctuate", "reading": "ˈflʌktʃueɪt", "translation": "波动", "example_sentence": "Oil prices continued to fluctuate sharply." },
+                { "word": "stimulus", "reading": "ˈstɪmjələs", "translation": "刺激（措施）", "example_sentence": "The central bank announced a new stimulus package." }
+              ],
+              "grammar_questions": [
+                { "stem": "Hardly ___ when prices began to rise.", "options": ["the stimulus package had been announced", "had the stimulus package been announced", "the stimulus package has been announced", "was the stimulus package announced"], "answer": 1, "explanation": "Hardly...when 句型中 Hardly 置于句首引起部分倒装，且用过去完成时被动。" },
+                { "stem": "The company denied ___ false figures to its investors.", "options": ["publish", "to publish", "publishing", "published"], "answer": 2, "explanation": "deny 后接动名词作宾语，即 deny doing sth。" },
+                { "stem": "Should the crisis deepen, the bank ___ interest rates.", "options": ["would cut", "cuts", "will cut", "cut"], "answer": 0, "explanation": "Should the crisis deepen 是省略 if 的虚拟条件句，主句用 would cut。" }
+              ],
+              "listening_materials": [
+                { "text": "Global markets tumbled as inflation hit its highest level in decades.", "translation": "随着通货膨胀达到数十年来最高水平，全球市场大幅下挫。", "speed_level": 2 },
+                { "text": "The central bank raised interest rates again in an effort to curb inflation.", "translation": "央行再次加息以遏制通货膨胀。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "社会议题",
+              "vocabularies": [
+                { "word": "inequality", "reading": "ˌɪnɪˈkwɑːləti", "translation": "不平等", "example_sentence": "Education remains a key to reducing social inequality." },
+                { "word": "discrimination", "reading": "dɪˌskrɪmɪˈneɪʃn", "translation": "歧视", "example_sentence": "The law forbids discrimination on the basis of age." },
+                { "word": "poverty", "reading": "ˈpɑːvərti", "translation": "贫困", "example_sentence": "Millions of children still live in extreme poverty." },
+                { "word": "integrate", "reading": "ˈɪntɪɡreɪt", "translation": "融合；使成为整体", "example_sentence": "New policies help immigrants integrate into society." },
+                { "word": "advocate", "reading": "ˈædvəkeɪt", "translation": "提倡；拥护", "example_sentence": "Many experts advocate a shorter working week." },
+                { "word": "welfare", "reading": "ˈwelfer", "translation": "福利", "example_sentence": "The welfare system supports those most in need." }
+              ],
+              "grammar_questions": [
+                { "stem": "It is essential that every citizen ___ equal access to education.", "options": ["has", "have", "had", "will have"], "answer": 1, "explanation": "It is essential that 后的从句用虚拟语气 (should) have。" },
+                { "stem": "Only when poverty is eliminated ___ true social justice.", "options": ["we can achieve", "can we achieve", "we achieve", "achieve we"], "answer": 1, "explanation": "only 修饰的状语从句位于句首时，主句用部分倒装 can we achieve。" },
+                { "stem": "The report highlights the fact ___ inequality is widening.", "options": ["which", "what", "that", "whether"], "answer": 2, "explanation": "fact 后接同位语从句，说明 fact 的具体内容，用连接词 that。" }
+              ],
+              "listening_materials": [
+                { "text": "Closing the gap between rich and poor remains one of society's greatest challenges.", "translation": "缩小贫富差距仍然是社会面临的最大挑战之一。", "speed_level": 2 },
+                { "text": "Activists are calling for stronger laws against workplace discrimination.", "translation": "活动人士呼吁制定更严格的法律来反对职场歧视。", "speed_level": 2 }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "学术讨论",
+          "description": "从研究方法到学术写作，构建正式场合的分析与论证能力。",
+          "lessons": [
+            {
+              "title": "研究方法与术语",
+              "vocabularies": [
+                { "word": "hypothesis", "reading": "haɪˈpɑːθəsɪs", "translation": "假设；假说", "example_sentence": "The experiment was designed to test our hypothesis." },
+                { "word": "methodology", "reading": "ˌmeθəˈdɑːlədʒi", "translation": "研究方法", "example_sentence": "The paper describes the methodology in detail." },
+                { "word": "sample", "reading": "ˈsæmpl", "translation": "样本", "example_sentence": "The survey drew a sample of two thousand adults." },
+                { "word": "variable", "reading": "ˈveriəbl", "translation": "变量", "example_sentence": "Researchers controlled for every major variable." },
+                { "word": "analyze", "reading": "ˈænəlaɪz", "translation": "分析", "example_sentence": "The team will analyze the data using statistical software." },
+                { "word": "validity", "reading": "vəˈlɪdəti", "translation": "有效性", "example_sentence": "A larger sample improves the validity of the results." }
+              ],
+              "grammar_questions": [
+                { "stem": "The findings ___ that further research is needed.", "options": ["suggests", "suggest", "suggested", "is suggesting"], "answer": 1, "explanation": "findings 意为“研究结果”，是复数名词，谓语动词用原形 suggest。" },
+                { "stem": "___ the results are reliable remains to be seen.", "options": ["Whether", "That", "What", "Which"], "answer": 0, "explanation": "主语从句表示“是否可靠尚待观察”，用 Whether 引导。" },
+                { "stem": "A survey ___ last year involved over five hundred students.", "options": ["conduct", "conducting", "conducted", "was conducted"], "answer": 2, "explanation": "survey 与 conduct 是被动关系，用过去分词 conducted 作后置定语。" }
+              ],
+              "listening_materials": [
+                { "text": "This study sets out to test the hypothesis that sleep affects memory.", "translation": "本研究旨在验证睡眠影响记忆这一假设。", "speed_level": 2 },
+                { "text": "The methodology section explains how the data were collected and analyzed.", "translation": "研究方法部分解释了数据是如何收集和分析的。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "论证与批判性思维",
+              "vocabularies": [
+                { "word": "premise", "reading": "ˈpremɪs", "translation": "前提", "example_sentence": "The argument rests on a questionable premise." },
+                { "word": "bias", "reading": "ˈbaɪəs", "translation": "偏见", "example_sentence": "Readers should be aware of the author's potential bias." },
+                { "word": "evidence", "reading": "ˈevɪdəns", "translation": "证据", "example_sentence": "The conclusion is not supported by sufficient evidence." },
+                { "word": "refute", "reading": "rɪˈfjuːt", "translation": "驳斥", "example_sentence": "The scholar refuted the claims with solid data." },
+                { "word": "perspective", "reading": "pərˈspektɪv", "translation": "视角；观点", "example_sentence": "Considering the issue from another perspective helps." },
+                { "word": "assumption", "reading": "əˈsʌmpʃn", "translation": "假定；假设", "example_sentence": "His argument is built on a false assumption." }
+              ],
+              "grammar_questions": [
+                { "stem": "___ the author's claims, the data point in the opposite direction.", "options": ["Contrary to", "According to", "In favor of", "In terms of"], "answer": 0, "explanation": "与作者的说法相反，用短语 Contrary to 引出对比。" },
+                { "stem": "___, the two studies reached opposite conclusions.", "options": ["Interestingly", "Interest", "Interested", "To interest"], "answer": 0, "explanation": "修饰整个句子要用评注性副词 Interestingly。" },
+                { "stem": "It was the sample size ___ made the results questionable.", "options": ["which", "that", "what", "who"], "answer": 1, "explanation": "强调句型 It was...that...，被强调部分是物也用 that。" }
+              ],
+              "listening_materials": [
+                { "text": "A strong argument must rest on solid evidence rather than opinion.", "translation": "一个有力的论证必须建立在可靠证据而非观点之上。", "speed_level": 2 },
+                { "text": "We should question the assumptions behind any research finding.", "translation": "我们应当质疑任何研究结论背后的假设。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "数据与图表描述",
+              "vocabularies": [
+                { "word": "fluctuation", "reading": "ˌflʌktʃuˈeɪʃn", "translation": "波动", "example_sentence": "The graph shows sharp fluctuations in demand." },
+                { "word": "peak", "reading": "piːk", "translation": "峰值；顶峰", "example_sentence": "Sales reached their peak in December." },
+                { "word": "decline", "reading": "dɪˈklaɪn", "translation": "下降；衰退", "example_sentence": "There was a steady decline in unemployment." },
+                { "word": "proportion", "reading": "prəˈpɔːrʃn", "translation": "比例；部分", "example_sentence": "A large proportion of respondents were students." },
+                { "word": "account", "reading": "əˈkaʊnt", "translation": "占（比例）；解释", "example_sentence": "Women account for sixty percent of the workforce." },
+                { "word": "trend", "reading": "trend", "translation": "趋势", "example_sentence": "The overall trend suggests a gradual recovery." }
+              ],
+              "grammar_questions": [
+                { "stem": "The number of students ___ sharply since 2020.", "options": ["rose", "has risen", "raised", "have risen"], "answer": 1, "explanation": "the number of 作主语谓语用单数；与 since 连用且“上升”为不及物动词，用 has risen。" },
+                { "stem": "Sales doubled, ___ surprised many analysts.", "options": ["that", "which", "what", "it"], "answer": 1, "explanation": "非限制性定语从句指代前面整个句子，用关系代词 which。" },
+                { "stem": "By 2030, the proportion of elderly people ___ to thirty percent.", "options": ["will rise", "will have risen", "is rising", "rises"], "answer": 1, "explanation": "by + 将来时间表示到将来某时为止，用将来完成时 will have risen。" }
+              ],
+              "listening_materials": [
+                { "text": "As the chart shows, the number of online learners doubled between 2020 and 2025.", "translation": "如图所示，在线学习者的数量在2020年至2025年间翻了一番。", "speed_level": 2 },
+                { "text": "The figures reveal a steady upward trend in household spending.", "translation": "数据显示家庭支出呈稳步上升趋势。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "学术写作与引用",
+              "vocabularies": [
+                { "word": "cite", "reading": "saɪt", "translation": "引用；援引", "example_sentence": "The author cites several recent studies to support her claim." },
+                { "word": "reference", "reading": "ˈrefrəns", "translation": "参考文献", "example_sentence": "All references must follow the required format." },
+                { "word": "paraphrase", "reading": "ˈpærəfreɪz", "translation": "改写；意译", "example_sentence": "You may paraphrase the passage in your own words." },
+                { "word": "coherent", "reading": "koʊˈhɪrənt", "translation": "连贯的", "example_sentence": "A coherent essay develops one clear line of thought." },
+                { "word": "plagiarism", "reading": "ˈpleɪdʒərɪzəm", "translation": "剽窃；抄袭", "example_sentence": "Plagiarism can lead to serious academic consequences." },
+                { "word": "abstract", "reading": "ˈæbstrækt", "translation": "摘要", "example_sentence": "The abstract summarizes the aims and findings of the paper." }
+              ],
+              "grammar_questions": [
+                { "stem": "Not until the final draft was completed ___ the full references.", "options": ["the student added", "did the student add", "the student adds", "added the student"], "answer": 1, "explanation": "Not until 位于句首时主句用部分倒装 did the student add。" },
+                { "stem": "The editor recommended that the abstract ___ rewritten.", "options": ["is", "be", "was", "being"], "answer": 1, "explanation": "recommend 后的宾语从句用虚拟语气 (should) be rewritten。" },
+                { "stem": "___ cited properly, the source may still be considered plagiarism.", "options": ["If not", "Even", "Although", "Despite"], "answer": 0, "explanation": "If not cited properly 是“if + 否定 + 过去分词”的条件状语，表示“如果不正确引用”。" }
+              ],
+              "listening_materials": [
+                { "text": "Remember to cite every source you use; otherwise, it counts as plagiarism.", "translation": "记得标注所有引用来源，否则即视为剽窃。", "speed_level": 2 },
+                { "text": "A good academic essay presents a clear argument in coherent paragraphs.", "translation": "一篇优秀的学术文章以连贯的段落呈现清晰的论证。", "speed_level": 2 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "placement_questions": [
+    { "level_tag": "beginner", "stem": "— Good morning! — ___", "options": ["Good morning.", "Good evening.", "Good night.", "Goodbye."], "answer": 0, "explanation": "早晨见面问候用 Good morning，回应同样的问候。" },
+    { "level_tag": "beginner", "stem": "She ___ a nurse.", "options": ["am", "is", "are", "be"], "answer": 1, "explanation": "主语 she 是第三人称单数，be 动词用 is。" },
+    { "level_tag": "beginner", "stem": "There ___ two books on the desk.", "options": ["is", "are", "am", "be"], "answer": 1, "explanation": "there be 句型遵循就近原则，two books 是复数，用 are。" },
+    { "level_tag": "intermediate", "stem": "I ___ my keys, so I can't open the door.", "options": ["lose", "lost", "have lost", "will lose"], "answer": 2, "explanation": "过去的动作对现在造成影响（开不了门），用现在完成时 have lost。" },
+    { "level_tag": "intermediate", "stem": "The new bridge ___ in 2020.", "options": ["built", "was built", "has built", "is building"], "answer": 1, "explanation": "桥是“被建”的，与过去时间 2020 连用，用一般过去时被动语态 was built。" },
+    { "level_tag": "intermediate", "stem": "Do you know the woman ___ is talking to Tom?", "options": ["which", "who", "whose", "whom"], "answer": 1, "explanation": "先行词 the woman 指人，且在定语从句中作主语，用关系代词 who。" },
+    { "level_tag": "advanced", "stem": "If I ___ you, I would take the chance.", "options": ["am", "was", "were", "be"], "answer": 2, "explanation": "与现在事实相反的虚拟条件句，be 动词一律用 were。" },
+    { "level_tag": "advanced", "stem": "Never in my life ___ such a moving film.", "options": ["I have seen", "have I seen", "I saw", "did I see"], "answer": 1, "explanation": "否定副词 Never 位于句首，句子用部分倒装 have I seen。" },
+    { "level_tag": "advanced", "stem": "It is necessary that each member ___ the rules.", "options": ["follows", "follow", "followed", "will follow"], "answer": 1, "explanation": "It is necessary that 后的从句用虚拟语气 (should) follow。" }
+  ]
+}

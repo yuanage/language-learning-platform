@@ -1,0 +1,553 @@
+{
+  "code": "ja",
+  "name": "日语",
+  "speech_locale": "ja-JP",
+  "emoji": "🇯🇵",
+  "levels": [
+    {
+      "level": "beginner",
+      "name": "入门",
+      "courses": [
+        {
+          "title": "五十音与寒暄",
+          "description": "从假名起步，掌握基本问候与日常寒暄表达。",
+          "lessons": [
+            {
+              "title": "五十音与基本问候",
+              "vocabularies": [
+                { "word": "私", "reading": "わたし", "translation": "我", "example_sentence": "私は学生です。" },
+                { "word": "学校", "reading": "がっこう", "translation": "学校", "example_sentence": "あそこは私の学校です。" },
+                { "word": "先生", "reading": "せんせい", "translation": "老师", "example_sentence": "山田先生はとても親切です。" },
+                { "word": "本", "reading": "ほん", "translation": "书", "example_sentence": "これは日本語の本です。" },
+                { "word": "友達", "reading": "ともだち", "translation": "朋友", "example_sentence": "友達と一緒に昼ご飯を食べます。" },
+                { "word": "名前", "reading": "なまえ", "translation": "名字", "example_sentence": "お名前を教えてください。" }
+              ],
+              "grammar_questions": [
+                { "stem": "私___学生です。", "options": ["は", "が", "を", "に"], "answer": 0, "explanation": "「は」是提示主题的助词，全句围绕「私」展开。" },
+                { "stem": "山田さん___先生です。", "options": ["は", "を", "へ", "より"], "answer": 0, "explanation": "名词谓语句的主题用「は」提示。" },
+                { "stem": "リンゴとバナナと___が好きですか。", "options": ["どれ", "だれ", "いつ", "どこ"], "answer": 0, "explanation": "在三个以上事物中选择时用疑问词「どれ」。" }
+              ],
+              "listening_materials": [
+                { "text": "はじめまして。田中です。よろしくお願いします。", "translation": "初次见面。我是田中。请多关照。", "speed_level": 0 },
+                { "text": "これは何ですか。それはペンです。", "translation": "这是什么？那是钢笔。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "日常寒暄",
+              "vocabularies": [
+                { "word": "朝", "reading": "あさ", "translation": "早晨", "example_sentence": "毎朝六時に起きます。" },
+                { "word": "今晩", "reading": "こんばん", "translation": "今晚", "example_sentence": "今晩は家でゆっくり過ごします。" },
+                { "word": "挨拶", "reading": "あいさつ", "translation": "打招呼、问候", "example_sentence": "新しい先生に挨拶をしました。" },
+                { "word": "元気", "reading": "げんき", "translation": "有精神的、健康", "example_sentence": "祖母はいつも元気です。" },
+                { "word": "仕事", "reading": "しごと", "translation": "工作", "example_sentence": "仕事は七時に終わります。" },
+                { "word": "明日", "reading": "あした", "translation": "明天", "example_sentence": "明日図書館で勉強します。" }
+              ],
+              "grammar_questions": [
+                { "stem": "お元気です___。", "options": ["か", "が", "は", "も"], "answer": 0, "explanation": "疑问句句末用助词「か」。" },
+                { "stem": "毎朝新聞___読みます。", "options": ["を", "が", "に", "で"], "answer": 0, "explanation": "「を」表示动作的对象。" },
+                { "stem": "明日また会い___。", "options": ["ましょう", "ます", "ません", "ました"], "answer": 0, "explanation": "表示提议、号召时用「ましょう」。" }
+              ],
+              "listening_materials": [
+                { "text": "おはようございます。今日はいい天気ですね。", "translation": "早上好。今天天气真好啊。", "speed_level": 0 },
+                { "text": "さようなら。また明日。", "translation": "再见。明天见。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "数字与时间",
+              "vocabularies": [
+                { "word": "一", "reading": "いち", "translation": "一", "example_sentence": "リンゴを一つください。" },
+                { "word": "時間", "reading": "じかん", "translation": "时间", "example_sentence": "時間がたくさんあります。" },
+                { "word": "今", "reading": "いま", "translation": "现在", "example_sentence": "今、雨が降っています。" },
+                { "word": "半", "reading": "はん", "translation": "半", "example_sentence": "会議は二時半に始まります。" },
+                { "word": "週末", "reading": "しゅうまつ", "translation": "周末", "example_sentence": "週末は家でのんびりします。" },
+                { "word": "分", "reading": "ふん", "translation": "分（钟）", "example_sentence": "十分待ってください。" }
+              ],
+              "grammar_questions": [
+                { "stem": "今何時です___。", "options": ["か", "が", "は", "を"], "answer": 0, "explanation": "疑问句句末用助词「か」。" },
+                { "stem": "七時___朝ご飯を食べます。", "options": ["に", "で", "を", "へ"], "answer": 0, "explanation": "「に」表示动作发生的具体时间。" },
+                { "stem": "図書館___三時間勉強しました。", "options": ["で", "に", "を", "が"], "answer": 0, "explanation": "「で」表示动作进行的场所。" }
+              ],
+              "listening_materials": [
+                { "text": "すみません、今何時ですか。", "translation": "不好意思，现在几点了？", "speed_level": 0 },
+                { "text": "会議は十時から始まります。", "translation": "会议十点开始。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "礼貌用语",
+              "vocabularies": [
+                { "word": "手伝う", "reading": "てつだう", "translation": "帮忙", "example_sentence": "引越しを手伝ってくれてありがとう。" },
+                { "word": "大丈夫", "reading": "だいじょうぶ", "translation": "没关系、不要紧", "example_sentence": "少し熱がありますが、大丈夫です。" },
+                { "word": "遠慮", "reading": "えんりょ", "translation": "客气、拘谨", "example_sentence": "遠慮なく食べてください。" },
+                { "word": "帰る", "reading": "かえる", "translation": "回去、回家", "example_sentence": "早く家へ帰ります。" },
+                { "word": "楽しみ", "reading": "たのしみ", "translation": "期待、乐趣", "example_sentence": "夏休みを楽しみにしています。" },
+                { "word": "無理", "reading": "むり", "translation": "勉强、做不到", "example_sentence": "病気のときは無理をしないでください。" }
+              ],
+              "grammar_questions": [
+                { "stem": "無理しない___ください。", "options": ["で", "に", "を", "は"], "answer": 0, "explanation": "「ないでください」表示请求对方不要做某事。" },
+                { "stem": "荷物を持ち___か。", "options": ["ましょう", "ました", "ません", "たい"], "answer": 0, "explanation": "主动提出帮忙时用「ましょうか」。" },
+                { "stem": "そろそろ失礼___。", "options": ["します", "です", "ます", "だ"], "answer": 0, "explanation": "「失礼します」是进入或离开时的固定寒暄语。" }
+              ],
+              "listening_materials": [
+                { "text": "お先に失礼します。", "translation": "我先走一步了。", "speed_level": 0 },
+                { "text": "ごちそうさまでした。とてもおいしかったです。", "translation": "多谢款待。非常好吃。", "speed_level": 0 }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "自我介绍与购物",
+          "description": "学会介绍自己，并完成购物、点餐、问路等生活场景对话。",
+          "lessons": [
+            {
+              "title": "自我介绍",
+              "vocabularies": [
+                { "word": "出身", "reading": "しゅっしん", "translation": "出身地、籍贯", "example_sentence": "私は上海出身です。" },
+                { "word": "趣味", "reading": "しゅみ", "translation": "爱好", "example_sentence": "姉の趣味は料理です。" },
+                { "word": "大学", "reading": "だいがく", "translation": "大学", "example_sentence": "弟は来年大学に入学します。" },
+                { "word": "会社員", "reading": "かいしゃいん", "translation": "公司职员", "example_sentence": "父は銀行の会社員です。" },
+                { "word": "紹介", "reading": "しょうかい", "translation": "介绍", "example_sentence": "友達を紹介してもらいました。" },
+                { "word": "好き", "reading": "すき", "translation": "喜欢", "example_sentence": "私は犬が好きです。" }
+              ],
+              "grammar_questions": [
+                { "stem": "私は日本語___好きです。", "options": ["が", "は", "を", "に"], "answer": 0, "explanation": "「好き」的对象用「が」表示。" },
+                { "stem": "私は中国___日本へ行きました。", "options": ["から", "まで", "に", "で"], "answer": 0, "explanation": "「から」表示动作的起点。" },
+                { "stem": "私の趣味は音楽を聴く___です。", "options": ["こと", "もの", "とき", "ため"], "answer": 0, "explanation": "动词句名词化时用形式名词「こと」。" }
+              ],
+              "listening_materials": [
+                { "text": "初めまして。王明と申します。中国から来ました。", "translation": "初次见面。我叫王明，来自中国。", "speed_level": 0 },
+                { "text": "私の趣味は音楽を聴くことです。", "translation": "我的爱好是听音乐。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "购物与价格",
+              "vocabularies": [
+                { "word": "値段", "reading": "ねだん", "translation": "价格", "example_sentence": "野菜の値段が上がりました。" },
+                { "word": "買い物", "reading": "かいもの", "translation": "购物", "example_sentence": "母と買い物に行きました。" },
+                { "word": "円", "reading": "えん", "translation": "日元", "example_sentence": "この本は千五百円でした。" },
+                { "word": "安い", "reading": "やすい", "translation": "便宜的", "example_sentence": "この店のパンは安いです。" },
+                { "word": "高い", "reading": "たかい", "translation": "贵的、高的", "example_sentence": "この山はとても高いです。" },
+                { "word": "財布", "reading": "さいふ", "translation": "钱包", "example_sentence": "電車の中で財布を拾いました。" }
+              ],
+              "grammar_questions": [
+                { "stem": "このかばんは___ですか。", "options": ["いくら", "だれ", "なに", "どこ"], "answer": 0, "explanation": "询问价格用「いくら」。" },
+                { "stem": "りんご___三つください。", "options": ["を", "が", "に", "で"], "answer": 0, "explanation": "「を」表示希望得到的具体物品。" },
+                { "stem": "もう少し___なりませんか。", "options": ["安く", "安い", "安さ", "安め"], "answer": 0, "explanation": "表示状态变化时用形容词连用形「安く」。" }
+              ],
+              "listening_materials": [
+                { "text": "すみません、これはいくらですか。", "translation": "请问这个多少钱？", "speed_level": 0 },
+                { "text": "じゃあ、これを二つください。", "translation": "那么，请给我两个这个。", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "餐厅点餐",
+              "vocabularies": [
+                { "word": "注文", "reading": "ちゅうもん", "translation": "点餐、订购", "example_sentence": "ハンバーガーを二個注文しました。" },
+                { "word": "料理", "reading": "りょうり", "translation": "菜肴、做菜", "example_sentence": "母は毎日おいしい料理を作ります。" },
+                { "word": "水", "reading": "みず", "translation": "水", "example_sentence": "冷たい水を一杯ください。" },
+                { "word": "魚", "reading": "さかな", "translation": "鱼", "example_sentence": "川で魚をつりました。" },
+                { "word": "甘い", "reading": "あまい", "translation": "甜的", "example_sentence": "このプリンは甘くておいしいです。" },
+                { "word": "辛い", "reading": "からい", "translation": "辣的", "example_sentence": "タイ料理はとても辛いです。" }
+              ],
+              "grammar_questions": [
+                { "stem": "窓を開けて___いいですか。", "options": ["も", "は", "が", "を"], "answer": 0, "explanation": "「てもいいですか」表示请求许可。" },
+                { "stem": "この料理は少し辛すぎ___ね。", "options": ["ます", "です", "だ", "した"], "answer": 0, "explanation": "「すぎます」表示程度过头，礼貌表达用ます形。" },
+                { "stem": "これは日本語で何___言いますか。", "options": ["と", "を", "に", "が"], "answer": 0, "explanation": "「と」表示引用、称谓的内容。" }
+              ],
+              "listening_materials": [
+                { "text": "ご注文はお決まりですか。", "translation": "您想好点什么了吗？", "speed_level": 0 },
+                { "text": "こちらのラーメンは少し辛いですが、大丈夫ですか。", "translation": "这边的拉面有点辣，没关系吗？", "speed_level": 0 }
+              ]
+            },
+            {
+              "title": "问路与方位",
+              "vocabularies": [
+                { "word": "駅", "reading": "えき", "translation": "车站", "example_sentence": "家から駅まで歩いて十分です。" },
+                { "word": "道", "reading": "みち", "translation": "路、道路", "example_sentence": "雪で道が滑りやすくなっています。" },
+                { "word": "角", "reading": "かど", "translation": "拐角", "example_sentence": "病院はその角の向こうです。" },
+                { "word": "近い", "reading": "ちかい", "translation": "近的", "example_sentence": "コンビニは学校から近いです。" },
+                { "word": "右", "reading": "みぎ", "translation": "右", "example_sentence": "右手に銀行が見えます。" },
+                { "word": "地図", "reading": "ちず", "translation": "地图", "example_sentence": "旅行のとき、地図を持っていきます。" }
+              ],
+              "grammar_questions": [
+                { "stem": "トイレは___ですか。", "options": ["どこ", "だれ", "いつ", "なぜ"], "answer": 0, "explanation": "询问地点用疑问词「どこ」。" },
+                { "stem": "あの角___右へ曲がってください。", "options": ["を", "に", "で", "へ"], "answer": 0, "explanation": "表示移动路径经过的场所用「を」。" },
+                { "stem": "図書館は公園___近くにあります。", "options": ["の", "が", "を", "へ"], "answer": 0, "explanation": "名词修饰名词要用「の」。" }
+              ],
+              "listening_materials": [
+                { "text": "すみません、東京駅への行き方を教えてください。", "translation": "不好意思，请告诉我去东京站怎么走。", "speed_level": 0 },
+                { "text": "まっすぐ行って、二つ目の信号を左に曲がってください。", "translation": "直走，在第二个红绿灯处左转。", "speed_level": 0 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "intermediate",
+      "name": "进阶",
+      "courses": [
+        {
+          "title": "旅行与职场",
+          "description": "在旅行与职场场景中提升听说能力，掌握中级核心语法。",
+          "lessons": [
+            {
+              "title": "旅行计划",
+              "vocabularies": [
+                { "word": "旅行", "reading": "りょこう", "translation": "旅行", "example_sentence": "夏休みに北海道へ旅行します。" },
+                { "word": "予約", "reading": "よやく", "translation": "预约", "example_sentence": "コンサートのチケットを予約しました。" },
+                { "word": "観光", "reading": "かんこう", "translation": "观光", "example_sentence": "古い寺で観光を楽しみました。" },
+                { "word": "滞在", "reading": "たいざい", "translation": "停留、逗留", "example_sentence": "パリに一週間滞在する予定です。" },
+                { "word": "行程", "reading": "こうてい", "translation": "行程", "example_sentence": "三日間の行程を作りました。" },
+                { "word": "案内", "reading": "あんない", "translation": "引路、向导", "example_sentence": "知らない街を案内してもらいました。" }
+              ],
+              "grammar_questions": [
+                { "stem": "京都に行った___があります。", "options": ["こと", "もの", "はず", "ため"], "answer": 0, "explanation": "「たことがある」表示曾经的经验。" },
+                { "stem": "ホテルは前もって予約して___きました。", "options": ["おき", "い", "み", "しまい"], "answer": 0, "explanation": "「ておく」表示提前做好准备。" },
+                { "stem": "旅行の予定___相談しましょう。", "options": ["について", "にとって", "に対して", "によって"], "answer": 0, "explanation": "「について」表示谈论、考虑的内容。" }
+              ],
+              "listening_materials": [
+                { "text": "今度の連休に京都へ旅行に行くことにしました。", "translation": "这个连休我决定去京都旅行。", "speed_level": 1 },
+                { "text": "ホテルは早めに予約しておいたほうがいいですよ。", "translation": "酒店最好提前预订哦。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "酒店与交通",
+              "vocabularies": [
+                { "word": "到着", "reading": "とうちゃく", "translation": "到达", "example_sentence": "列車は定刻に到着しました。" },
+                { "word": "出発", "reading": "しゅっぱつ", "translation": "出发", "example_sentence": "明日の朝、空港から出発します。" },
+                { "word": "乗り換え", "reading": "のりかえ", "translation": "换乘", "example_sentence": "名古屋で新幹線に乗り換えます。" },
+                { "word": "混雑", "reading": "こんざつ", "translation": "拥挤", "example_sentence": "連休中は観光地がとても混雑します。" },
+                { "word": "両替", "reading": "りょうがえ", "translation": "兑换（货币）", "example_sentence": "空港でドルを円に両替しました。" },
+                { "word": "遅延", "reading": "ちえん", "translation": "晚点、延误", "example_sentence": "大雪のため、電車に遅延が出ました。" }
+              ],
+              "grammar_questions": [
+                { "stem": "電車が遅れた___、会議に間に合いませんでした。", "options": ["ため", "よう", "そう", "はず"], "answer": 0, "explanation": "「ため」表示原因、理由。" },
+                { "stem": "新幹線___乗り換えなければなりません。", "options": ["に", "で", "を", "へ"], "answer": 0, "explanation": "「乗り換える」表示换乘的对象用「に」。" },
+                { "stem": "早く出発しないと、___かもしれません。", "options": ["間に合わない", "間に合わせない", "間に合わされない", "間に合わさない"], "answer": 0, "explanation": "「ないと」后接否定推测，表示不抓紧就来不及。" }
+              ],
+              "listening_materials": [
+                { "text": "次の電車は三番ホームから出ますので、お間違えのないように。", "translation": "下一班电车从三号站台发车，请不要坐错。", "speed_level": 1 },
+                { "text": "すみません、この切符はどこで買えますか。", "translation": "请问这种票在哪里可以买到？", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "职场日常",
+              "vocabularies": [
+                { "word": "残業", "reading": "ざんぎょう", "translation": "加班", "example_sentence": "今週は残業が多いです。" },
+                { "word": "休暇", "reading": "きゅうか", "translation": "休假", "example_sentence": "来月、二週間の休暇を取ります。" },
+                { "word": "出張", "reading": "しゅっちょう", "translation": "出差", "example_sentence": "来週、福岡へ出張します。" },
+                { "word": "報告", "reading": "ほうこく", "translation": "汇报、报告", "example_sentence": "係長に結果を報告しました。" },
+                { "word": "同僚", "reading": "どうりょう", "translation": "同事", "example_sentence": "同僚と居酒屋へ行きました。" },
+                { "word": "締め切り", "reading": "しめきり", "translation": "截止日期", "example_sentence": "レポートの締め切りは来週の月曜日です。" }
+              ],
+              "grammar_questions": [
+                { "stem": "部長がおっしゃる___、明日は会議です。", "options": ["と", "を", "に", "は"], "answer": 0, "explanation": "「と」表示引用的内容。" },
+                { "stem": "目上の人に「聞く」の謙譲語は___です。", "options": ["伺う", "お聞かせする", "聞かされる", "ご覧になる"], "answer": 0, "explanation": "「伺う」是「聞く」的谦让语，其余不是「聞く」的谦让形式。" },
+                { "stem": "締め切り___間に合いました。", "options": ["に", "で", "を", "が"], "answer": 0, "explanation": "「に間に合う」是固定搭配，表示赶得上。" }
+              ],
+              "listening_materials": [
+                { "text": "今日は少し残業になりそうなので、先に帰ってもいいですか。", "translation": "今天可能要稍微加个班，我可以先回去吗？", "speed_level": 1 },
+                { "text": "締め切りが近づいていますので、報告書を早めにお願いします。", "translation": "截止日期快到了，报告请尽早提交。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "会议与邮件",
+              "vocabularies": [
+                { "word": "会議", "reading": "かいぎ", "translation": "会议", "example_sentence": "打ち合わせの会議が長引きました。" },
+                { "word": "資料", "reading": "しりょう", "translation": "资料", "example_sentence": "会議の資料を五十部コピーしました。" },
+                { "word": "添付", "reading": "てんぷ", "translation": "附件、附加", "example_sentence": "契約書をファイルに添付してください。" },
+                { "word": "返信", "reading": "へんしん", "translation": "回信、回复", "example_sentence": "お客様から返信が届きました。" },
+                { "word": "確認", "reading": "かくにん", "translation": "确认", "example_sentence": "予約の確認をしました。" },
+                { "word": "都合", "reading": "つごう", "translation": "方便、情况", "example_sentence": "都合が悪ければ、日を変えましょう。" }
+              ],
+              "grammar_questions": [
+                { "stem": "ご確認の___、よろしくお願いいたします。", "options": ["ほど", "ため", "よう", "とき"], "answer": 0, "explanation": "「ご確認のほど」是商务邮件中委婉请求的固定表达。" },
+                { "stem": "お返事をお待ち___おります。", "options": ["いた", "しま", "して", "でき"], "answer": 0, "explanation": "「お待ちしております」是谦让语的固定表达。" },
+                { "stem": "お忙しい___、ご対応いただきありがとうございます。", "options": ["ところ", "とき", "うち", "なか"], "answer": 0, "explanation": "「お忙しいところ」是固定寒暄表达，表示打扰的时机。" }
+              ],
+              "listening_materials": [
+                { "text": "明日の会議は午後四時に変更になりましたので、ご注意ください。", "translation": "明天的会议改到下午四点，请注意。", "speed_level": 1 },
+                { "text": "メールに資料を添付しましたので、ご確認ください。", "translation": "资料已附在邮件中，请查收确认。", "speed_level": 1 }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "阅读与敬语",
+          "description": "系统学习敬语体系，培养新闻与文章的阅读理解能力。",
+          "lessons": [
+            {
+              "title": "尊敬语入门",
+              "vocabularies": [
+                { "word": "尊敬語", "reading": "そんけいご", "translation": "尊敬语", "example_sentence": "「いらっしゃる」は「いる」の尊敬語です。" },
+                { "word": "上がる", "reading": "あがる", "translation": "进、上（尊他）", "example_sentence": "どうぞ二階へお上がりください。" },
+                { "word": "召し上がる", "reading": "めしあがる", "translation": "吃、喝（尊他）", "example_sentence": "先生は何も召し上がりませんでした。" },
+                { "word": "下さる", "reading": "くださる", "translation": "给（我）（尊他）", "example_sentence": "社長がお土産を下さいました。" },
+                { "word": "目上", "reading": "めうえ", "translation": "长辈、上司", "example_sentence": "目上の人を敬うのは大切です。" },
+                { "word": "言葉遣い", "reading": "ことばづかい", "translation": "措辞、用语", "example_sentence": "言葉遣いが美しい人ですね。" }
+              ],
+              "grammar_questions": [
+                { "stem": "「食べる」の尊敬語は___です。", "options": ["召し上がる", "いただく", "頂戴する", "賜る"], "answer": 0, "explanation": "「召し上がる」是尊他语，其余都是谦让语。" },
+                { "stem": "社長はもう帰宅___ました。", "options": ["され", "し", "いた", "でき"], "answer": 0, "explanation": "「〜される」是尊他语形式，主体是上级时使用。" },
+                { "stem": "先生はもうお帰り___ました。", "options": ["になり", "にし", "でなり", "であり"], "answer": 0, "explanation": "「お〜になる」是常用的尊他语句型。" }
+              ],
+              "listening_materials": [
+                { "text": "少々お待ちくださいませ。ただいま確認いたします。", "translation": "请稍等，我这就确认。", "speed_level": 1 },
+                { "text": "どうぞご遠慮なく、召し上がってください。", "translation": "请别客气，尝尝吧。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "谦让语",
+              "vocabularies": [
+                { "word": "謙譲語", "reading": "けんじょうご", "translation": "谦让语", "example_sentence": "謙譲語で自分の動きを控えめに表します。" },
+                { "word": "伺う", "reading": "うかがう", "translation": "请教、拜访（谦让）", "example_sentence": "先生のご意見を伺いました。" },
+                { "word": "存じる", "reading": "ぞんじる", "translation": "知道（谦让）", "example_sentence": "詳しくは存じておりません。" },
+                { "word": "拝見", "reading": "はいけん", "translation": "拜读、拜看（谦让）", "example_sentence": "お手紙を拝見しました。" },
+                { "word": "差し上げる", "reading": "さしあげる", "translation": "给、赠（谦让）", "example_sentence": "記念品を差し上げます。" },
+                { "word": "目下", "reading": "めした", "translation": "晚辈、下级", "example_sentence": "目下の者にも丁寧に話します。" }
+              ],
+              "grammar_questions": [
+                { "stem": "「行く」の謙譲語は___です。", "options": ["伺う", "お見えになる", "お越しになる", "お上がりになる"], "answer": 0, "explanation": "「伺う」是谦让语，其余都是尊他语。" },
+                { "stem": "先生にご連絡___ました。", "options": ["いたし", "なさい", "になり", "になさ"], "answer": 0, "explanation": "「いたしました」是谦让语，表示自己发出的动作。" },
+                { "stem": "お荷物は私がお持ち___。", "options": ["します", "になります", "です", "くださいます"], "answer": 0, "explanation": "「お〜する」是谦让句型，自己做动作用「します」。" }
+              ],
+              "listening_materials": [
+                { "text": "お世話になっております。株式会社山田の佐藤でございます。", "translation": "承蒙关照。我是山田株式会社的佐藤。", "speed_level": 1 },
+                { "text": "それでは、資料のほうを拝見させていただきます。", "translation": "那么，请允许我看一下资料。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "新闻阅读",
+              "vocabularies": [
+                { "word": "記事", "reading": "きじ", "translation": "报道、文章", "example_sentence": "新聞の記事を切り抜きました。" },
+                { "word": "見出し", "reading": "みだし", "translation": "标题", "example_sentence": "見出しを見て記事を選びます。" },
+                { "word": "発表", "reading": "はっぴょう", "translation": "发表、发布", "example_sentence": "新薬の開発が発表されました。" },
+                { "word": "増加", "reading": "ぞうか", "translation": "增加", "example_sentence": "訪日客は年々増加しています。" },
+                { "word": "減少", "reading": "げんしょう", "translation": "减少", "example_sentence": "漁獲量はここ十年で大きく減少しました。" },
+                { "word": "課題", "reading": "かだい", "translation": "课题、问题", "example_sentence": "少子化は日本の大きな課題です。" }
+              ],
+              "grammar_questions": [
+                { "stem": "台風が接近している___、イベントは中止になりました。", "options": ["ため", "くせに", "わりに", "ものの"], "answer": 0, "explanation": "「ため」表示原因、理由。" },
+                { "stem": "調査___、若者の読書時間は減っている。", "options": ["によると", "によって", "に対して", "にとって"], "answer": 0, "explanation": "「によると」表示信息来源，意为\"根据\"。" },
+                { "stem": "地震の___、電車が止まった。", "options": ["影響で", "おかげで", "限りで", "かけて"], "answer": 0, "explanation": "「影響で」表示受到负面影响；「おかげで」只用于积极结果。" }
+              ],
+              "listening_materials": [
+                { "text": "政府は今日、来年度の経済政策を発表しました。", "translation": "政府今天发表了新年度的经济政策。", "speed_level": 1 },
+                { "text": "専門家は今後の少子化の進行に懸念を示しています。", "translation": "专家对今后少子化问题的加剧表示担忧。", "speed_level": 1 }
+              ]
+            },
+            {
+              "title": "议论文阅读",
+              "vocabularies": [
+                { "word": "筆者", "reading": "ひっしゃ", "translation": "笔者、作者", "example_sentence": "この文章の筆者は経済学者です。" },
+                { "word": "主張", "reading": "しゅちょう", "translation": "主张", "example_sentence": "彼女の主張は一貫している。" },
+                { "word": "根拠", "reading": "こんきょ", "translation": "根据", "example_sentence": "データという根拠がなければ、説得力がない。" },
+                { "word": "結論", "reading": "けつろん", "translation": "结论", "example_sentence": "話し合いの結果、結論が出ました。" },
+                { "word": "対策", "reading": "たいさく", "translation": "对策", "example_sentence": "電力不足の対策を急いでいます。" },
+                { "word": "論点", "reading": "ろんてん", "translation": "论点", "example_sentence": "話がそれて、論点がずれてしまいました。" }
+              ],
+              "grammar_questions": [
+                { "stem": "練習すればする___、上手になります。", "options": ["ほど", "だけ", "のに", "こと"], "answer": 0, "explanation": "「ば〜ほど」表示程度递进，意为\"越…越…\"。" },
+                { "stem": "読書は有益である___、時間がない人には難しい。", "options": ["ものの", "からには", "以上は", "ついでに"], "answer": 0, "explanation": "「ものの」表示逆接，意为\"虽然…但是\"。" },
+                { "stem": "彼は努力した___、成功できなかった。", "options": ["にもかかわらず", "おかげで", "だけあって", "せいで"], "answer": 0, "explanation": "「にもかかわらず」表示与预期相反的结果。" }
+              ],
+              "listening_materials": [
+                { "text": "結論から申し上げますと、この案には賛成できません。", "translation": "从结论上讲，我无法赞成这个方案。", "speed_level": 1 },
+                { "text": "何事も、続けてこそ成果が表れるのだと思います。", "translation": "我认为凡事只有坚持才能见到成果。", "speed_level": 1 }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "level": "advanced",
+      "name": "提高",
+      "courses": [
+        {
+          "title": "新闻评论",
+          "description": "研读新闻、经济报道与社论，掌握高级语法与时事词汇。",
+          "lessons": [
+            {
+              "title": "社会新闻",
+              "vocabularies": [
+                { "word": "少子高齢化", "reading": "しょうしこうれいか", "translation": "少子老龄化", "example_sentence": "少子高齢化が急速に進んでいる。" },
+                { "word": "就職氷河期", "reading": "しゅうしょくひょうがき", "translation": "就职冰河期", "example_sentence": "あの世代は就職氷河期を経験した。" },
+                { "word": "格差", "reading": "かくさ", "translation": "差距", "example_sentence": "都市と地方の教育格差が問題になっている。" },
+                { "word": "懸念", "reading": "けねん", "translation": "担忧、顾虑", "example_sentence": "専門家は再発への懸念を示した。" },
+                { "word": "見直し", "reading": "みなおし", "translation": "重新审视、修改", "example_sentence": "制度の見直しが求められている。" },
+                { "word": "是正", "reading": "ぜせい", "translation": "纠正、矫正", "example_sentence": "待遇の不均衡を是正するべきだ。" }
+              ],
+              "grammar_questions": [
+                { "stem": "労働力不足は深刻化する___ある。", "options": ["一方だ", "一方で", "上に", "うちに"], "answer": 0, "explanation": "「〜一方だ」表示事态朝一个方向不断发展。" },
+                { "stem": "今___、実情に合った制度を作るべきだ。", "options": ["こそ", "さえ", "でも", "しか"], "answer": 0, "explanation": "「今こそ」强调\"正是现在\"这一时机。" },
+                { "stem": "支援策を講じた___、効果は限定的だった。", "options": ["ものの", "から", "ので", "ばかりに"], "answer": 0, "explanation": "「ものの」表示逆接，\"虽然采取了措施但效果有限\"。" }
+              ],
+              "listening_materials": [
+                { "text": "政府は、少子化対策として新たな給付制度を創設する方針を固めました。", "translation": "政府确定了作为少子化对策创设新补贴制度的方针。", "speed_level": 2 },
+                { "text": "専門家からは、制度の実効性を疑問視する声も上がっています。", "translation": "专家中也有人对制度的实际效果提出质疑。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "经济新闻",
+              "vocabularies": [
+                { "word": "円安", "reading": "えんやす", "translation": "日元贬值", "example_sentence": "円安は輸入物価を押し上げる。" },
+                { "word": "株価", "reading": "かぶか", "translation": "股价", "example_sentence": "株価が一時、過去最高値をつけた。" },
+                { "word": "物価", "reading": "ぶっか", "translation": "物价", "example_sentence": "消費者物価は前年比で上昇した。" },
+                { "word": "需給", "reading": "じゅきゅう", "translation": "供需", "example_sentence": "需給のひっ迫が価格を押し上げた。" },
+                { "word": "決算", "reading": "けっさん", "translation": "结算、决算", "example_sentence": "今期の決算は最終黒字だった。" },
+                { "word": "回復", "reading": "かいふく", "translation": "恢复", "example_sentence": "輸送網は数日で回復した。" }
+              ],
+              "grammar_questions": [
+                { "stem": "物価が上がる___、賃金は伸び悩んでいる。", "options": ["一方で", "ばかりに", "あまり", "上に"], "answer": 0, "explanation": "「一方で」表示两个事项的对比。" },
+                { "stem": "事態が悪化する___、政府は対応に追われた。", "options": ["や否や", "うちに", "あげく", "たびに"], "answer": 0, "explanation": "「や否や」表示\"刚一…就…\"。" },
+                { "stem": "円安___、輸入コストが増大した。", "options": ["に伴い", "に限り", "に先立ち", "に沿って"], "answer": 0, "explanation": "「に伴い」表示\"伴随着…\"。" }
+              ],
+              "listening_materials": [
+                { "text": "日銀は金融緩和の維持を決めましたが、市場の反応は限定的でした。", "translation": "日本央行决定维持金融宽松，但市场反应有限。", "speed_level": 2 },
+                { "text": "経済界からは、人手不足の解消に向けた規制緩和を求める声が強まっています。", "translation": "经济界要求放宽管制以解决人手不足的呼声日益高涨。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "社论解读",
+              "vocabularies": [
+                { "word": "社説", "reading": "しゃせつ", "translation": "社论", "example_sentence": "紙面は社説で政策転換を訴えた。" },
+                { "word": "喫緊", "reading": "きっきん", "translation": "紧迫", "example_sentence": "喫緊の問題から順に解決していく。" },
+                { "word": "憂慮", "reading": "ゆうりょ", "translation": "忧虑", "example_sentence": "現状を憂慮する声が相次いだ。" },
+                { "word": "世論", "reading": "よろん", "translation": "舆论", "example_sentence": "世論の趨勢はまだ読めない。" },
+                { "word": "窮状", "reading": "きゅうじょう", "translation": "困境", "example_sentence": "被災者の窮状に目を向けるべきだ。" },
+                { "word": "転換", "reading": "てんかん", "translation": "转变、转换", "example_sentence": "エネルギー政策の大転換が問われている。" }
+              ],
+              "grammar_questions": [
+                { "stem": "このまま放置してよいはずが___。", "options": ["ない", "ある", "よい", "よかった"], "answer": 0, "explanation": "「はずがない」表示强烈的否定推断，\"绝不可能\"。" },
+                { "stem": "財政再建___、増税は避けて通れない。", "options": ["なくしては", "に際して", "を皮切りに", "をもとに"], "answer": 0, "explanation": "「なくしては」表示\"如果没有…就（不能）…\"。" },
+                { "stem": "財源が乏しい___、支出は増える一方だ。", "options": ["にひきかえ", "にあたって", "をこめて", "をめぐって"], "answer": 0, "explanation": "「にひきかえ」表示前后事项的鲜明对比。" }
+              ],
+              "listening_materials": [
+                { "text": "喫緊の課題である社会保障の持続可能性を、今こそ真剣に議論すべきだ。", "translation": "正因为社会保障的可持续性是紧迫课题，现在更应认真讨论。", "speed_level": 2 },
+                { "text": "世論の盛り上がりなくして、政治を動かす力は生まれないだろう。", "translation": "没有舆论的高涨，就不会产生推动政治的力量吧。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "环境与科技评论",
+              "vocabularies": [
+                { "word": "脱炭素", "reading": "だつたんそ", "translation": "脱碳（低碳化）", "example_sentence": "脱炭素への移行が世界的な潮流だ。" },
+                { "word": "再生可能エネルギー", "reading": "さいせいかのうエネルギー", "translation": "可再生能源", "example_sentence": "再生可能エネルギーの割合が年々高まっている。" },
+                { "word": "温室効果ガス", "reading": "おんしつこうかガス", "translation": "温室气体", "example_sentence": "温室効果ガスの排出を実質ゼロにする。" },
+                { "word": "倫理", "reading": "りんり", "translation": "伦理", "example_sentence": "AI利用には倫理面の議論が不可欠だ。" },
+                { "word": "革新", "reading": "かくしん", "translation": "革新", "example_sentence": "技術革新が働き方を大きく変えた。" },
+                { "word": "持続可能", "reading": "じぞくかのう", "translation": "可持续的", "example_sentence": "持続可能な社会の実現が求められている。" }
+              ],
+              "grammar_questions": [
+                { "stem": "技術が進歩しようが___、倫理の議論は欠かせない。", "options": ["しまいが", "しないが", "ないが", "ませんが"], "answer": 0, "explanation": "「〜ようが〜まいが」表示\"无论…与否\"。" },
+                { "stem": "課題は多い___、方向性は間違っていない。", "options": ["とはいえ", "にあたって", "をもって", "を契機に"], "answer": 0, "explanation": "「とはいえ」表示\"虽说如此\"的让步转折。" },
+                { "stem": "二酸化炭素の排出量は減るどころ___、増える一方だ。", "options": ["か", "に", "で", "も"], "answer": 0, "explanation": "「〜どころか」表示与预期相反，甚至更进一步。" }
+              ],
+              "listening_materials": [
+                { "text": "AIの発展は目覚ましいものの、倫理的リスクへの備えはまだ十分とは言えません。", "translation": "AI的发展固然惊人，但对伦理风险的防范还不能说已经充分。", "speed_level": 2 },
+                { "text": "脱炭素への移行は、コストの問題であると同時に、新たな成長機会でもあるはずです。", "translation": "向脱碳的转型既是成本问题，同时也应当是新的增长机遇。", "speed_level": 2 }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "文学与书面语",
+          "description": "品读近代文学与随笔，掌握书面语表达与古文基础知识。",
+          "lessons": [
+            {
+              "title": "近代文学",
+              "vocabularies": [
+                { "word": "作家", "reading": "さっか", "translation": "作家", "example_sentence": "彼は三十代で作家として認められた。" },
+                { "word": "作品", "reading": "さくひん", "translation": "作品", "example_sentence": "この作品には時代の影が濃く投影されている。" },
+                { "word": "晩年", "reading": "ばんねん", "translation": "晚年", "example_sentence": "作者は晩年、匿名で評論を書き続けた。" },
+                { "word": "感傷", "reading": "かんしょう", "translation": "感伤", "example_sentence": "冒頭の一節には淡い感傷が漂う。" },
+                { "word": "描写", "reading": "びょうしゃ", "translation": "描写", "example_sentence": "登場人物の心理描写が見事だ。" },
+                { "word": "名作", "reading": "めいさく", "translation": "名作", "example_sentence": "近代文学の名作は今も読み継がれている。" }
+              ],
+              "grammar_questions": [
+                { "stem": "彼が小説を書いたのは、二十歳___のことである。", "options": ["そこそこ", "まで", "から", "だけ"], "answer": 0, "explanation": "「数詞＋そこそこ」表示\"大约、刚过\"。" },
+                { "stem": "近代文学___、この傾向は顕著に見られる。", "options": ["において", "にとって", "に対して", "にあたって"], "answer": 0, "explanation": "「において」表示场所、领域，书面语色彩浓厚。" },
+                { "stem": "この作品は晩年の作者___書かれた。", "options": ["によって", "にとって", "に対して", "について"], "answer": 0, "explanation": "被动句中表示动作主体用「によって」。" }
+              ],
+              "listening_materials": [
+                { "text": "この小説は、生と死をめぐる繊細な心理描写で知られています。", "translation": "这部小说以围绕生死的细腻心理描写而闻名。", "speed_level": 2 },
+                { "text": "作者は晩年、ふるさとの風景を懐かしむように筆を執りました。", "translation": "作者晚年提笔写作，仿佛在怀念故乡的风景。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "随笔欣赏",
+              "vocabularies": [
+                { "word": "随筆", "reading": "ずいひつ", "translation": "随笔", "example_sentence": "彼は随筆の名手として知られている。" },
+                { "word": "余裕", "reading": "よゆう", "translation": "余裕、富余", "example_sentence": "心に余裕のある暮らしをしたいものだ。" },
+                { "word": "季節感", "reading": "きせつかん", "translation": "季节感", "example_sentence": "俳句には繊細な季節感が宿る。" },
+                { "word": "日常", "reading": "にちじょう", "translation": "日常", "example_sentence": "名もなき日常の中に詩を見いだす。" },
+                { "word": "感慨", "reading": "かんがい", "translation": "感慨", "example_sentence": "ふと胸に去来する感慨がある。" },
+                { "word": "佇まい", "reading": "たたずまい", "translation": "姿态、样貌", "example_sentence": "古民家の佇まいにしばし見入った。" }
+              ],
+              "grammar_questions": [
+                { "stem": "春___、野に花が咲き乱れる。", "options": ["ともなると", "に沿って", "をもとに", "に限って"], "answer": 0, "explanation": "「ともなると」表示\"一到…（自然就）…\"。" },
+                { "stem": "誰もが余裕を持てる___ではない。", "options": ["わけ", "はず", "ため", "だけ"], "answer": 0, "explanation": "「わけではない」表示部分否定。" },
+                { "stem": "風情は失われて___つつある。", "options": ["い", "しま", "あり", "おき"], "answer": 0, "explanation": "「失われつつある」表示正在逐渐消失，「つつある」接「ている」的「い」。" }
+              ],
+              "listening_materials": [
+                { "text": "随筆の魅力は、著者の息遣いが感じられるところにあります。", "translation": "随笔的魅力在于能让人感受到作者的气息。", "speed_level": 2 },
+                { "text": "季節の移ろいを感じながら暮らすことは、豊かさのひとつだと思います。", "translation": "我认为在感受季节变迁中生活本身就是一种富足。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "古典语法",
+              "vocabularies": [
+                { "word": "古文", "reading": "こぶん", "translation": "古文", "example_sentence": "古文の授業で枕草子を講読した。" },
+                { "word": "和歌", "reading": "わか", "translation": "和歌", "example_sentence": "百人一首は和歌の撰集である。" },
+                { "word": "助詞", "reading": "じょし", "translation": "助词", "example_sentence": "古語の助詞は現代語と用法が異なる。" },
+                { "word": "活用", "reading": "かつよう", "translation": "（词形）活用", "example_sentence": "動詞の活用表を暗記する。" },
+                { "word": "訓読", "reading": "くんどく", "translation": "训读", "example_sentence": "漢籍を訓読して読み下す。" },
+                { "word": "仮名", "reading": "かな", "translation": "假名", "example_sentence": "平仮名は万葉仮名から生まれた。" }
+              ],
+              "grammar_questions": [
+                { "stem": "古語で過去や詠嘆を表す助動詞は___です。", "options": ["けり", "なり", "らむ", "まし"], "answer": 0, "explanation": "「けり」表示过去或咏叹；「なり」表传闻或断定，「らむ」表推量，「まし」表反实假想。" },
+                { "stem": "現代語で「行かない」という意味になる古語は___です。", "options": ["行かず", "行かね", "行かる", "行かむ"], "answer": 0, "explanation": "「ず」是打消助动词，相当于现代语的「ない」。" },
+                { "stem": "古語の「いと」は、現代語の___に当たる。", "options": ["とても", "わずかに", "おそらく", "ついに"], "answer": 0, "explanation": "「いと」表示程度很高，相当于\"非常\"。" }
+              ],
+              "listening_materials": [
+                { "text": "古文では「いと」と言えば「とても」の意味になります。", "translation": "在古语中，\"いと\"表示\"非常\"的意思。", "speed_level": 2 },
+                { "text": "和歌は三十一文字で詠む、日本の伝統的な短い詩です。", "translation": "和歌是用三十一个音节吟咏的日本传统短诗。", "speed_level": 2 }
+              ]
+            },
+            {
+              "title": "书面语表达",
+              "vocabularies": [
+                { "word": "文語", "reading": "ぶんご", "translation": "文言、书面语", "example_sentence": "文語のリズムには独特の格調がある。" },
+                { "word": "語彙", "reading": "ごい", "translation": "词汇", "example_sentence": "読書を通して語彙を豊かにする。" },
+                { "word": "慣用句", "reading": "かんようく", "translation": "惯用句", "example_sentence": "慣用句を場面に応じて使い分ける。" },
+                { "word": "記述", "reading": "きじゅつ", "translation": "记述、撰写", "example_sentence": "レポートの記述は簡潔を心がける。" },
+                { "word": "文体", "reading": "ぶんたい", "translation": "文体", "example_sentence": "論文では文体の統一が求められる。" },
+                { "word": "補足", "reading": "ほそく", "translation": "补充", "example_sentence": "本文末に補足の注を付けた。" }
+              ],
+              "grammar_questions": [
+                { "stem": "学術論文では「〜と思う」より「〜と___」が好まれる。", "options": ["考えられる", "考えたい", "考えさせる", "考えられた"], "answer": 0, "explanation": "「と考えられる」是学术论文中客观表述的惯用形式。" },
+                { "stem": "言い換え___、この主張は根拠を欠く。", "options": ["れば", "ると", "るなら", "れる"], "answer": 0, "explanation": "「言い換えれば」表示\"换言之\"。" },
+                { "stem": "結論を先に述べる___、後から理由を説明する。", "options": ["べきだ", "はずだ", "だけだ", "あまりだ"], "answer": 0, "explanation": "「〜べきだ」表示理所当然、应当。" }
+              ],
+              "listening_materials": [
+                { "text": "書き言葉は話し言葉に比べて、簡潔さと正確さがより強く求められます。", "translation": "与口语相比，书面语更强调简洁与准确。", "speed_level": 2 },
+                { "text": "「思う」より「考えられる」のほうが、学術的な文体には適しています。", "translation": "与\"思う\"相比，\"考えられる\"更适于学术文体。", "speed_level": 2 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "placement_questions": [
+    { "level_tag": "beginner", "stem": "私___日本語を勉強します。", "options": ["は", "が", "を", "に"], "answer": 0, "explanation": "「は」是提示主题的助词。" },
+    { "level_tag": "beginner", "stem": "これを___ください。", "options": ["一つ", "一人", "一度", "一方"], "answer": 0, "explanation": "购买或索取物品时用「一つ」等数量词计数。" },
+    { "level_tag": "beginner", "stem": "すみません、銀行は___ですか。", "options": ["どこ", "だれ", "いつ", "なに"], "answer": 0, "explanation": "询问地点用疑问词「どこ」。" },
+    { "level_tag": "intermediate", "stem": "彼は東京へ行った___があります。", "options": ["こと", "もの", "はず", "ため"], "answer": 0, "explanation": "「たことがある」表示曾经有过某种经历。" },
+    { "level_tag": "intermediate", "stem": "「食べる」の謙譲語は___です。", "options": ["いただく", "召し上がる", "ご覧になる", "おっしゃる"], "answer": 0, "explanation": "「いただく」是「食べる・飲む」的谦让语，其余为尊他语。" },
+    { "level_tag": "intermediate", "stem": "雨が降っている___、試合は続行された。", "options": ["ものの", "ので", "おかげで", "ばかりに"], "answer": 0, "explanation": "「ものの」表示逆接，\"虽然下雨但比赛仍继续\"。" },
+    { "level_tag": "advanced", "stem": "景気は回復しつつ___、雇用情勢は依然として厳しい。", "options": ["ある", "いる", "ない", "みえる"], "answer": 0, "explanation": "「〜つつある」表示变化正在持续，固定接「ある」。" },
+    { "level_tag": "advanced", "stem": "ここまで述べた___、本件には慎重に対応すべきだ。", "options": ["とおり", "ながら", "つつ", "につけ"], "answer": 0, "explanation": "「〜たとおり」表示\"正如…所述\"。" },
+    { "level_tag": "advanced", "stem": "現地の状況が悪化している___、支援の強化が急務となっている。", "options": ["ことから", "わりには", "ものなら", "にひきかえ"], "answer": 0, "explanation": "「ことから」表示原因、依据。" }
+  ]
+}
