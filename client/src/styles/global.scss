@@ -1,0 +1,136 @@
+/* ═══════════════ 设计令牌：亮 / 暗 双主题 ═══════════════ */
+html[data-theme='light'] {
+  --llp-bg: #f5f7fb;
+  --llp-bg-card: #ffffff;
+  --llp-bg-glass: rgba(255, 255, 255, 0.82);
+  --llp-border: #eef0f5;
+  --llp-text: #26262b;
+  --llp-text-secondary: #7a7f8c;
+  --llp-hero-grad: linear-gradient(120deg, #5b7cfa 0%, #8fa6ff 100%);
+  --llp-auth-grad: linear-gradient(135deg, #eef2ff 0%, #f5f7fb 55%, #e8f0ff 100%);
+  --llp-shadow-card: 0 2px 10px rgba(30, 40, 90, 0.08);
+  --llp-shadow-float: 0 12px 32px rgba(30, 40, 90, 0.14);
+  --llp-flip-back: #eef2ff;
+  --llp-primary: #5b7cfa;
+}
+
+html[data-theme='dark'] {
+  --llp-bg: #0d1020;
+  --llp-bg-card: #171b2e;
+  --llp-bg-glass: rgba(23, 27, 46, 0.82);
+  --llp-border: #262c47;
+  --llp-text: #e8eaf2;
+  --llp-text-secondary: #9aa0b5;
+  --llp-hero-grad: linear-gradient(120deg, #2a3a8f 0%, #3d55c0 100%);
+  --llp-auth-grad: linear-gradient(135deg, #10142a 0%, #0d1020 55%, #121a33 100%);
+  --llp-shadow-card: 0 2px 12px rgba(0, 0, 0, 0.4);
+  --llp-shadow-float: 0 12px 36px rgba(0, 0, 0, 0.55);
+  --llp-flip-back: #1f2647;
+  --llp-primary: #8fa6ff;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root { height: 100%; margin: 0; padding: 0; }
+
+body {
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", "Yu Gothic", "Malgun Gothic", "Hiragino Sans", sans-serif;
+  background: var(--llp-bg);
+  color: var(--llp-text);
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+a { text-decoration: none; }
+
+/* 现代化滚动条 */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: var(--llp-border); border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: var(--llp-text-secondary); }
+
+/* 页面容器 */
+.page-container { max-width: 1080px; margin: 0 auto; padding: 20px; }
+
+/* antd 卡片现代化：悬浮微抬升 */
+.ant-card { transition: box-shadow 0.25s ease, transform 0.25s ease, background 0.25s ease; }
+
+/* ═══════════════ 单词翻卡 ═══════════════ */
+.flip-card { perspective: 1000px; cursor: pointer; min-height: 180px; }
+.flip-card-inner { position: relative; width: 100%; min-height: 180px; transition: transform 0.5s; transform-style: preserve-3d; }
+.flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+.flip-card-face {
+  position: absolute; inset: 0; backface-visibility: hidden;
+  border-radius: 12px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; padding: 16px;
+  box-shadow: var(--llp-shadow-card);
+  background: var(--llp-bg-card);
+  border: 1px solid var(--llp-border);
+}
+.flip-card-face.back { transform: rotateY(180deg); background: var(--llp-flip-back); }
+.flip-word { font-size: 26px; font-weight: 700; }
+.flip-reading { color: var(--llp-text-secondary); margin-top: 4px; }
+.flip-translation { font-size: 20px; font-weight: 600; }
+.flip-example { margin-top: 10px; color: var(--llp-text-secondary); font-size: 13px; text-align: center; }
+
+/* ═══════════════ 徽章墙 ═══════════════ */
+.badge-wall .badge-item {
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+  padding: 14px 8px; border-radius: 12px;
+  background: var(--llp-bg-card); border: 1px solid var(--llp-border);
+}
+.badge-wall .badge-item.locked { opacity: 0.45; filter: grayscale(0.9); }
+.badge-wall .badge-icon { font-size: 34px; }
+.badge-wall .badge-name { font-size: 13px; font-weight: 600; }
+
+/* ═══════════════ 跟读卡片 ═══════════════ */
+.speech-wave { font-size: 28px; letter-spacing: 4px; }
+
+/* ═══════════════ 认证页（登录/注册）：生成艺术氛围底画 + 玻璃卡片 ═══════════════ */
+.auth-page {
+  position: relative; min-height: 100vh; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--llp-auth-grad);
+  transition: background 0.25s ease;
+}
+.auth-canvas {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  pointer-events: none; opacity: 0.85;
+}
+.auth-card {
+  position: relative; z-index: 2;
+  width: 420px; max-width: calc(100vw - 32px);
+  border-radius: 16px !important;
+  box-shadow: var(--llp-shadow-float) !important;
+  background: var(--llp-bg-glass) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--llp-border) !important;
+}
+.auth-brand {
+  text-align: center; margin-bottom: 4px;
+  font-size: 24px; font-weight: 800; letter-spacing: 0.5px;
+  background: linear-gradient(90deg, #5b7cfa, #d97757);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.auth-brand .brand-emoji {
+  -webkit-text-fill-color: initial;
+  background: none;
+}
+
+/* ═══════════════ 首页英雄横幅 ═══════════════ */
+.hero-banner {
+  background: var(--llp-hero-grad);
+  border: none; border-radius: 16px;
+  position: relative; overflow: hidden;
+  transition: background 0.25s ease;
+}
+.hero-banner::after {
+  content: ''; position: absolute; right: -60px; top: -80px;
+  width: 260px; height: 260px; border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08); pointer-events: none;
+}
+.hero-banner::before {
+  content: ''; position: absolute; right: 80px; bottom: -110px;
+  width: 220px; height: 220px; border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06); pointer-events: none;
+}

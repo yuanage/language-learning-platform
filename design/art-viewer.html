@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!-- 基于 algorithmic-art 技能模板构建：保留结构/品牌/种子控件，算法与参数为「墨流字河 Glyph Currents」 -->
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>墨流字河 · Glyph Currents</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Lora:wght@400;500&family=Noto+Sans+JP:wght@400&family=Noto+Sans+KR:wght@400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --anthropic-dark: #141413;
+            --anthropic-light: #faf9f5;
+            --anthropic-mid-gray: #b0aea5;
+            --anthropic-light-gray: #e8e6dc;
+            --anthropic-orange: #d97757;
+            --anthropic-blue: #6a9bcc;
+            --anthropic-green: #788c5d;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Poppins', 'Noto Sans JP', 'Noto Sans KR', sans-serif;
+            background: linear-gradient(135deg, var(--anthropic-light) 0%, #f5f3ee 100%);
+            min-height: 100vh;
+            color: var(--anthropic-dark);
+        }
+
+        .container { display: flex; min-height: 100vh; padding: 20px; gap: 20px; }
+
+        .sidebar {
+            width: 320px; flex-shrink: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 24px; border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(20, 20, 19, 0.1);
+            overflow-y: auto; overflow-x: hidden;
+        }
+
+        .sidebar h1 { font-family: 'Lora', serif; font-size: 24px; font-weight: 500; color: var(--anthropic-dark); margin-bottom: 8px; }
+        .sidebar .subtitle { color: var(--anthropic-mid-gray); font-size: 14px; margin-bottom: 32px; line-height: 1.4; }
+
+        .control-section { margin-bottom: 32px; }
+        .control-section h3 { font-size: 16px; font-weight: 600; color: var(--anthropic-dark); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+        .control-section h3::before { content: '•'; color: var(--anthropic-orange); font-weight: bold; }
+
+        .seed-input {
+            width: 100%; background: var(--anthropic-light); padding: 12px; border-radius: 8px;
+            font-family: 'Courier New', monospace; font-size: 14px; margin-bottom: 12px;
+            border: 1px solid var(--anthropic-light-gray); text-align: center;
+        }
+        .seed-input:focus { outline: none; border-color: var(--anthropic-orange); box-shadow: 0 0 0 2px rgba(217, 119, 87, 0.1); background: white; }
+
+        .seed-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+        .regen-button { margin-bottom: 0; }
+
+        .control-group { margin-bottom: 20px; }
+        .control-group label { display: block; font-size: 14px; font-weight: 500; color: var(--anthropic-dark); margin-bottom: 8px; }
+
+        .slider-container { display: flex; align-items: center; gap: 12px; }
+        .slider-container input[type="range"] { flex: 1; height: 4px; background: var(--anthropic-light-gray); border-radius: 2px; outline: none; -webkit-appearance: none; }
+        .slider-container input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; width: 16px; height: 16px; background: var(--anthropic-orange); border-radius: 50%; cursor: pointer; transition: all 0.2s ease; }
+        .slider-container input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.1); background: #c86641; }
+        .slider-container input[type="range"]::-moz-range-thumb { width: 16px; height: 16px; background: var(--anthropic-orange); border-radius: 50%; border: none; cursor: pointer; }
+
+        .value-display { font-family: 'Courier New', monospace; font-size: 12px; color: var(--anthropic-mid-gray); min-width: 60px; text-align: right; }
+
+        .color-group { margin-bottom: 16px; }
+        .color-group label { display: block; font-size: 12px; color: var(--anthropic-mid-gray); margin-bottom: 4px; }
+        .color-picker-container { display: flex; align-items: center; gap: 8px; }
+        .color-picker-container input[type="color"] { width: 32px; height: 32px; border: none; border-radius: 6px; cursor: pointer; background: none; padding: 0; }
+        .color-value { font-family: 'Courier New', monospace; font-size: 12px; color: var(--anthropic-mid-gray); }
+
+        .button {
+            background: var(--anthropic-orange); color: white; border: none; padding: 10px 16px;
+            border-radius: 6px; font-size: 14px; font-weight: 500; cursor: pointer; transition: all 0.2s ease; width: 100%;
+        }
+        .button:hover { background: #c86641; transform: translateY(-1px); }
+        .button:active { transform: translateY(0); }
+        .button.secondary { background: var(--anthropic-blue); }
+        .button.secondary:hover { background: #5a8bb8; }
+        .button.tertiary { background: var(--anthropic-green); }
+        .button.tertiary:hover { background: #6b7b52; }
+        .button-row { display: flex; gap: 8px; }
+        .button-row .button { flex: 1; }
+
+        .canvas-area { flex: 1; display: flex; align-items: center; justify-content: center; min-width: 0; }
+        #canvas-container { width: 100%; max-width: 1000px; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 40px rgba(20, 20, 19, 0.1); background: white; }
+        #canvas-container canvas { display: block; width: 100% !important; height: auto !important; }
+
+        .loading { display: flex; align-items: center; justify-content: center; font-size: 18px; color: var(--anthropic-mid-gray); }
+
+        @media (max-width: 600px) {
+            .container { flex-direction: column; }
+            .sidebar { width: 100%; }
+            .canvas-area { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>墨流字河 · Glyph Currents</h1>
+            <div class="subtitle">英 · 日 · 韩三种文字汇入同一条噪声长河——多语种学习平台的生成艺术语言。同一种子，双生风景。</div>
+
+            <!-- Seed Section (FIXED) -->
+            <div class="control-section">
+                <h3>Seed 种子</h3>
+                <input type="number" id="seed-input" class="seed-input" value="20261" onchange="updateSeed()">
+                <div class="seed-controls">
+                    <button class="button secondary" onclick="previousSeed()">← Prev</button>
+                    <button class="button secondary" onclick="nextSeed()">Next →</button>
+                </div>
+                <button class="button tertiary regen-button" onclick="randomSeedAndUpdate()">↻ Random</button>
+            </div>
+
+            <!-- Parameters Section (VARIABLE) -->
+            <div class="control-section">
+                <h3>Parameters 参数</h3>
+
+                <div class="control-group">
+                    <label>字符墨滴数量 Particle Count</label>
+                    <div class="slider-container">
+                        <input type="range" id="particleCount" min="60" max="800" step="20" value="260" oninput="updateParam('particleCount', this.value)">
+                        <span class="value-display" id="particleCount-value">260</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label>洋流速度 Flow Speed</label>
+                    <div class="slider-container">
+                        <input type="range" id="flowSpeed" min="0.2" max="2" step="0.05" value="0.7" oninput="updateParam('flowSpeed', this.value)">
+                        <span class="value-display" id="flowSpeed-value">0.7</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label>河道尺度 Noise Scale</label>
+                    <div class="slider-container">
+                        <input type="range" id="noiseScale" min="0.0008" max="0.004" step="0.0001" value="0.0016" oninput="updateParam('noiseScale', this.value)">
+                        <span class="value-display" id="noiseScale-value">0.0016</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label>墨迹存留 Trail Persistence</label>
+                    <div class="slider-container">
+                        <input type="range" id="fadeAlpha" min="0.005" max="0.08" step="0.005" value="0.02" oninput="updateParam('fadeAlpha', this.value)">
+                        <span class="value-display" id="fadeAlpha-value">0.02</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label>字符字号 Glyph Size</label>
+                    <div class="slider-container">
+                        <input type="range" id="glyphSize" min="10" max="40" step="1" value="18" oninput="updateParam('glyphSize', this.value)">
+                        <span class="value-display" id="glyphSize-value">18</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label>文字涨落 Script Bias</label>
+                    <div class="slider-container">
+                        <input type="range" id="scriptBias" min="0" max="1" step="0.05" value="0.5" oninput="updateParam('scriptBias', this.value)">
+                        <span class="value-display" id="scriptBias-value">0.5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colors Section (VARIABLE) -->
+            <div class="control-section">
+                <h3>Colors 色彩</h3>
+
+                <div class="color-group">
+                    <label>底色 · 宣纸白 / 墨夜 Background</label>
+                    <div class="color-picker-container">
+                        <input type="color" id="colorBg" value="#faf9f5" onchange="updateColor('colorBg', this.value)">
+                        <span class="color-value" id="colorBg-value">#faf9f5</span>
+                    </div>
+                </div>
+
+                <div class="color-group">
+                    <label>拉丁字母 Latin · 靛青</label>
+                    <div class="color-picker-container">
+                        <input type="color" id="colorEN" value="#5b7cfa" onchange="updateColor('colorEN', this.value)">
+                        <span class="color-value" id="colorEN-value">#5b7cfa</span>
+                    </div>
+                </div>
+
+                <div class="color-group">
+                    <label>假名 Kana · 珊瑚</label>
+                    <div class="color-picker-container">
+                        <input type="color" id="colorJA" value="#d97757" onchange="updateColor('colorJA', this.value)">
+                        <span class="color-value" id="colorJA-value">#d97757</span>
+                    </div>
+                </div>
+
+                <div class="color-group">
+                    <label>谚文 Hangul · 青瓷</label>
+                    <div class="color-picker-container">
+                        <input type="color" id="colorKO" value="#788c5d" onchange="updateColor('colorKO', this.value)">
+                        <span class="color-value" id="colorKO-value">#788c5d</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Actions Section (FIXED) -->
+            <div class="control-section">
+                <h3>Actions</h3>
+                <div class="button-row">
+                    <button class="button" onclick="resetParameters()">Reset</button>
+                    <button class="button secondary" onclick="downloadPNG()">Download PNG</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="canvas-area">
+            <div id="canvas-container">
+                <div class="loading">墨流汇聚中 · Initializing generative art...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ═════════════════════════════════════════════════════════════════
+        // 墨流字河 · Glyph Currents — 参数
+        // ═════════════════════════════════════════════════════════════════
+
+        let params = {
+            seed: 20261,
+            particleCount: 260,
+            flowSpeed: 0.7,
+            noiseScale: 0.0016,
+            fadeAlpha: 0.02,
+            glyphSize: 18,
+            scriptBias: 0.5,
+            colorBg: '#faf9f5',
+            colorEN: '#5b7cfa',
+            colorJA: '#d97757',
+            colorKO: '#788c5d'
+        };
+        let defaultParams = { ...params };
+
+        const GLYPHS = {
+            EN: 'AaEeGgMRbbsw'.split(''),
+            JA: 'あいうかきさそにんほれ'.split(''),
+            KO: '가나다석손이학한혜'.split('')
+        };
+        const KEYS = ['EN', 'JA', 'KO'];
+
+        // ═════════════════════════════════════════════════════════════════
+        // p5.js 实现：三层噪声洋流 + 噪声深度呼吸 + 墨迹存留
+        // ═════════════════════════════════════════════════════════════════
+
+        let particles = [];
+        let t = 0; // 时间维度（第三噪声维）
+
+        function setup() {
+            let canvas = createCanvas(1200, 800);
+            canvas.parent('canvas-container');
+            textFont('Poppins, Noto Sans JP, Noto Sans KR, sans-serif');
+            initializeSystem();
+            document.querySelector('.loading').style.display = 'none';
+        }
+
+        function bgColorRGB() {
+            return hexToRGB(params.colorBg);
+        }
+
+        function hexToRGB(hex) {
+            const n = parseInt(hex.slice(1), 16);
+            return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
+        }
+
+        function initializeSystem() {
+            randomSeed(params.seed);
+            noiseSeed(params.seed);
+            t = 0;
+            particles = [];
+            for (let i = 0; i < params.particleCount; i++) {
+                particles.push(new Particle(true));
+            }
+            const bg = bgColorRGB();
+            background(bg[0], bg[1], bg[2]);
+        }
+
+        // 三层噪声合成河道角度
+        function fieldAngle(x, y, time) {
+            const ns = params.noiseScale;
+            const primary = noise(x * ns, y * ns, time * 0.08) * TWO_PI * 2.2;
+            const vortex = (noise(x * ns * 3.1 + 90, y * ns * 3.1, time * 0.15) - 0.5) * 1.6;
+            const jitter = (noise(x * ns * 9.7 + 200, y * ns * 9.7, time * 0.3) - 0.5) * 0.35;
+            return primary + vortex + jitter;
+        }
+
+        // 文字出现概率随时间缓变（概念种子：三语涨落）
+        function pickScriptKey(time) {
+            const b = params.scriptBias;
+            const w = KEYS.map((_, i) => 1 + b * noise(i * 37.7, time * 0.05) * 2);
+            const total = w[0] + w[1] + w[2];
+            let r = random(total);
+            for (let i = 0; i < KEYS.length; i++) {
+                if (r < w[i]) return KEYS[i];
+                r -= w[i];
+            }
+            return 'EN';
+        }
+
+        function draw() {
+            t += params.flowSpeed;
+            const bg = bgColorRGB();
+            // 墨迹存留：低透明度覆底，旧字退为薄雾
+            background(bg[0], bg[1], bg[2], params.fadeAlpha * 255);
+
+            noStroke();
+            for (const p of particles) {
+                p.update();
+                p.show();
+            }
+        }
+
+        class Particle {
+            constructor(scatter) {
+                this.respawn(scatter);
+            }
+
+            respawn(scatter) {
+                this.x = scatter ? random(width) : random(width);
+                this.y = scatter ? random(height) : -30;
+                if (!scatter && random() < 0.5) { this.y = random(height); this.x = -30; }
+                this.key = pickScriptKey(t);
+                this.glyph = random(GLYPHS[this.key]);
+                this.size = params.glyphSize * random(0.55, 1.7);
+                this.rot = random(TWO_PI);
+                this.rotSpeed = (noise(this.x * 0.01, this.y * 0.01) - 0.5) * 0.008;
+                this.phase = random(1000);
+                this.speed = params.flowSpeed * random(0.5, 1.2);
+            }
+
+            update() {
+                const a = fieldAngle(this.x, this.y, t);
+                this.x += cos(a) * this.speed;
+                this.y += sin(a) * this.speed;
+                this.rot += this.rotSpeed;
+                if (this.x < -40 || this.x > width + 40 || this.y < -40 || this.y > height + 40) {
+                    this.respawn(false);
+                }
+            }
+
+            show() {
+                // 噪声深度呼吸：谷值浮现，峰值沉为淡影
+                const depth = noise(this.x * params.noiseScale * 1.8, this.y * params.noiseScale * 1.8, this.phase + t * 0.02);
+                const alpha = map(depth, 0.25, 0.75, 230, 26);
+                const col = hexToRGB(params['color' + this.key]);
+                fill(col[0], col[1], col[2], constrain(alpha, 18, 235));
+                push();
+                translate(this.x, this.y);
+                rotate(this.rot);
+                textSize(this.size);
+                textAlign(CENTER, CENTER);
+                text(this.glyph, 0, 0);
+                pop();
+            }
+        }
+
+        // ═════════════════════════════════════════════════════════════════
+        // UI 控件处理
+        // ═════════════════════════════════════════════════════════════════
+
+        function updateParam(name, value) {
+            const v = parseFloat(value);
+            params[name] = v;
+            document.getElementById(name + '-value').textContent = value;
+            if (name === 'particleCount') {
+                const n = Math.round(v);
+                while (particles.length < n) particles.push(new Particle(true));
+                if (particles.length > n) particles.length = n;
+            } else if (name === 'glyphSize') {
+                // 字号即时生效，无需重建
+            }
+        }
+
+        function updateColor(id, value) {
+            params[id] = value;
+            document.getElementById(id + '-value').textContent = value;
+            if (id === 'colorBg') initializeSystem();
+        }
+
+        function downloadPNG() {
+            saveCanvas('glyph-currents-seed' + params.seed, 'png');
+        }
+
+        // ═════════════════════════════════════════════════════════════════
+        // 种子控制（FIXED）
+        // ═════════════════════════════════════════════════════════════════
+
+        function updateSeedDisplay() {
+            document.getElementById('seed-input').value = params.seed;
+        }
+
+        function updateSeed() {
+            let input = document.getElementById('seed-input');
+            let newSeed = parseInt(input.value);
+            if (newSeed && newSeed > 0) {
+                params.seed = newSeed;
+                initializeSystem();
+            } else {
+                updateSeedDisplay();
+            }
+        }
+
+        function previousSeed() {
+            params.seed = Math.max(1, params.seed - 1);
+            updateSeedDisplay();
+            initializeSystem();
+        }
+
+        function nextSeed() {
+            params.seed = params.seed + 1;
+            updateSeedDisplay();
+            initializeSystem();
+        }
+
+        function randomSeedAndUpdate() {
+            params.seed = Math.floor(Math.random() * 999999) + 1;
+            updateSeedDisplay();
+            initializeSystem();
+        }
+
+        function resetParameters() {
+            params = { ...defaultParams };
+            ['particleCount', 'flowSpeed', 'noiseScale', 'fadeAlpha', 'glyphSize', 'scriptBias'].forEach((k) => {
+                document.getElementById(k).value = params[k];
+                document.getElementById(k + '-value').textContent = params[k];
+            });
+            ['colorBg', 'colorEN', 'colorJA', 'colorKO'].forEach((k) => {
+                document.getElementById(k).value = params[k];
+                document.getElementById(k + '-value').textContent = params[k];
+            });
+            updateSeedDisplay();
+            initializeSystem();
+        }
+
+        window.addEventListener('load', function () {
+            updateSeedDisplay();
+        });
+    </script>
+</body>
+</html>

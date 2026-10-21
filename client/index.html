@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>语际 LingoBridge — 多语种在线学习平台</title>
+    <script>
+      // 防闪烁：React 挂载前依据本地偏好 / 系统偏好设置主题
+      (function () {
+        var theme = 'light';
+        try {
+          var saved = JSON.parse(localStorage.getItem('llp-ui') || '{}').state;
+          if (saved && saved.theme) theme = saved.theme;
+          else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) theme = 'dark';
+        } catch (e) { /* ignore */ }
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

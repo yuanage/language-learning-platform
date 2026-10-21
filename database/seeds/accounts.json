@@ -1,0 +1,6 @@
+{
+  "accounts": [
+    { "username": "admin", "password": "admin123", "nickname": "管理员", "role": "admin", "target_language": "en" },
+    { "username": "demo", "password": "demo1234", "nickname": "演示同学", "role": "user", "target_language": "ja" }
+  ]
+}

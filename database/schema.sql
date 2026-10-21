@@ -1,0 +1,258 @@
+-- =============================================================
+-- 多语种在线语言学习平台 数据库结构 (MySQL 8.0, utf8mb4)
+-- =============================================================
+CREATE DATABASE IF NOT EXISTS language_learning DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE language_learning;
+
+-- ---------- 用户域 ----------
+CREATE TABLE IF NOT EXISTS users (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL UNIQUE,
+  password_hash VARCHAR(255) NOT NULL,
+  nickname VARCHAR(50) NOT NULL,
+  avatar VARCHAR(255) DEFAULT NULL,
+  role ENUM('user','admin') NOT NULL DEFAULT 'user',
+  target_language VARCHAR(8) DEFAULT NULL COMMENT '当前主学语言代码 en/ja/ko',
+  current_level ENUM('beginner','intermediate','advanced') DEFAULT NULL COMMENT '分级测试判定等级',
+  total_points INT NOT NULL DEFAULT 0,
+  streak_days INT NOT NULL DEFAULT 0,
+  last_study_date DATE DEFAULT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS languages (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  code VARCHAR(8) NOT NULL UNIQUE COMMENT 'en/ja/ko',
+  name VARCHAR(50) NOT NULL,
+  speech_locale VARCHAR(12) NOT NULL COMMENT 'en-US/ja-JP/ko-KR',
+  emoji VARCHAR(8) DEFAULT NULL,
+  sort INT NOT NULL DEFAULT 0,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS user_language_settings (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNSIGNED NOT NULL,
+  language_id INT UNSIGNED NOT NULL,
+  daily_goal INT NOT NULL DEFAULT 20 COMMENT '每日学习目标(分钟)',
+  UNIQUE KEY uk_user_lang (user_id, language_id),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+  FOREIGN KEY (language_id) REFERENCES languages(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- ---------- 内容域 ----------
+CREATE TABLE IF NOT EXISTS levels (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  language_id INT UNSIGNED NOT NULL,
+  level ENUM('beginner','intermediate','advanced') NOT NULL,
+  name VARCHAR(50) NOT NULL,
+  UNIQUE KEY uk_lang_level (language_id, level),
+  FOREIGN KEY (language_id) REFERENCES languages(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS courses (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  level_id INT UNSIGNED NOT NULL,
+  title VARCHAR(100) NOT NULL,
+  description VARCHAR(500) DEFAULT NULL,
+  sort INT NOT NULL DEFAULT 0,
+  FOREIGN KEY (level_id) REFERENCES levels(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS lessons (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  course_id INT UNSIGNED NOT NULL,
+  title VARCHAR(100) NOT NULL,
+  type ENUM('lesson','review') NOT NULL DEFAULT 'lesson',
+  sort INT NOT NULL DEFAULT 0,
+  FOREIGN KEY (course_id) REFERENCES courses(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS vocabularies (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  lesson_id INT UNSIGNED NOT NULL,
+  word VARCHAR(100) NOT NULL,
+  reading VARCHAR(100) DEFAULT NULL COMMENT '假名/音标/罗马音',
+  translation VARCHAR(200) NOT NULL,
+  example_sentence VARCHAR(500) DEFAULT NULL,
+  FOREIGN KEY (lesson_id) REFERENCES lessons(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS grammar_questions (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  lesson_id INT UNSIGNED NOT NULL,
+  stem VARCHAR(500) NOT NULL,
+  options JSON NOT NULL COMMENT '选项数组',
+  answer TINYINT NOT NULL COMMENT '正确选项下标',
+  explanation VARCHAR(500) DEFAULT NULL,
+  FOREIGN KEY (lesson_id) REFERENCES lessons(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS listening_materials (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  lesson_id INT UNSIGNED NOT NULL,
+  text TEXT NOT NULL COMMENT '听力原文(TTS 播放)',
+  translation VARCHAR(500) DEFAULT NULL,
+  speed_level TINYINT NOT NULL DEFAULT 1 COMMENT '0慢/1正常/2快',
+  FOREIGN KEY (lesson_id) REFERENCES lessons(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- ---------- 学习记录域 ----------
+CREATE TABLE IF NOT EXISTS vocab_reviews (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNSIGNED NOT NULL,
+  vocabulary_id INT UNSIGNED NOT NULL,
+  box_no TINYINT NOT NULL DEFAULT 1 COMMENT 'Leitner 盒 1~5',
+  correct_count INT NOT NULL DEFAULT 0,
+  wrong_count INT NOT NULL DEFAULT 0,
+  next_review_at DATETIME NOT NULL,
+  updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  UNIQUE KEY uk_user_vocab (user_id, vocabulary_id),
+  KEY idx_due (user_id, next_review_at),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+  FOREIGN KEY (vocabulary_id) REFERENCES vocabularies(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS grammar_attempts (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNSIGNED NOT NULL,
+  question_id INT UNSIGNED NOT NULL,
+  is_correct TINYINT(1) NOT NULL,
+  chosen TINYINT NOT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+  FOREIGN KEY (question_id) REFERENCES grammar_questions(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS speaking_records (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNSIGNED NOT NULL,
+  material_id INT UNSIGNED NOT NULL COMMENT '跟读素材(复用 listening_materials)',
+  recognized_text VARCHAR(500) DEFAULT NULL,
+  score DECIMAL(4,1) NOT NULL DEFAULT 0 COMMENT '相似度 0~100',
+  passed TINYINT(1) NOT NULL DEFAULT 0,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+  FOREIGN KEY (material_id) REFERENCES listening_materials(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS user_lesson_progress (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNSIGNED NOT NULL,
+  lesson_id INT UNSIGNED NOT NULL,
+  status TINYINT NOT NULL DEFAULT 0 COMMENT '0未学/1进行中/2已完成',
+  sub_status JSON DEFAULT NULL COMMENT '{"vocab":true,"grammar":true,"listening":true,"speaking":true}',
+  completed_at DATETIME DEFAULT NULL,
+  updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  UNIQUE KEY uk_user_lesson (user_id, lesson_id),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+  FOREIGN KEY (lesson_id) REFERENCES lessons(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS study_logs (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNSIGNED NOT NULL,
+  study_date DATE NOT NULL,
+  study_minutes INT NOT NULL DEFAULT 0,
+  action_count INT NOT NULL DEFAULT 0,
+  UNIQUE KEY uk_user_date (user_id, study_date),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- ---------- 分级测试 ----------
+CREATE TABLE IF NOT EXISTS placement_questions (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  language_id INT UNSIGNED NOT NULL,
+  level_tag ENUM('beginner','intermediate','advanced') NOT NULL,
+  stem VARCHAR(500) NOT NULL,
+  options JSON NOT NULL,
+  answer TINYINT NOT NULL,
+  explanation VARCHAR(500) DEFAULT NULL,
+  FOREIGN KEY (language_id) REFERENCES languages(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS placement_results (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNSIGNED NOT NULL,
+  language_id INT UNSIGNED NOT NULL,
+  score INT NOT NULL DEFAULT 0,
+  result_level ENUM('beginner','intermediate','advanced') NOT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+  FOREIGN KEY (language_id) REFERENCES languages(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- ---------- 社区 ----------
+CREATE TABLE IF NOT EXISTS posts (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNSIGNED NOT NULL,
+  language_id INT UNSIGNED DEFAULT NULL,
+  title VARCHAR(200) NOT NULL,
+  content TEXT NOT NULL,
+  like_count INT NOT NULL DEFAULT 0,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+  FOREIGN KEY (language_id) REFERENCES languages(id) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS comments (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  post_id INT UNSIGNED NOT NULL,
+  user_id INT UNSIGNED NOT NULL,
+  content VARCHAR(1000) NOT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (post_id) REFERENCES posts(id) ON DELETE CASCADE,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS post_likes (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  post_id INT UNSIGNED NOT NULL,
+  user_id INT UNSIGNED NOT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE KEY uk_post_user (post_id, user_id),
+  FOREIGN KEY (post_id) REFERENCES posts(id) ON DELETE CASCADE,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- ---------- 成就激励 ----------
+CREATE TABLE IF NOT EXISTS badges (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  code VARCHAR(50) NOT NULL UNIQUE,
+  name VARCHAR(50) NOT NULL,
+  icon VARCHAR(200) NOT NULL COMMENT 'emoji 或图标名',
+  description VARCHAR(200) DEFAULT NULL,
+  criteria JSON NOT NULL COMMENT '{"type":"streak","days":7} 等',
+  points INT NOT NULL DEFAULT 0 COMMENT '获得徽章奖励积分'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS user_badges (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNSIGNED NOT NULL,
+  badge_id INT UNSIGNED NOT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE KEY uk_user_badge (user_id, badge_id),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+  FOREIGN KEY (badge_id) REFERENCES badges(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS point_records (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNSIGNED NOT NULL,
+  delta INT NOT NULL COMMENT '正负积分',
+  reason VARCHAR(100) NOT NULL,
+  ref_type VARCHAR(30) DEFAULT NULL,
+  ref_id INT UNSIGNED DEFAULT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS checkins (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNSIGNED NOT NULL,
+  checkin_date DATE NOT NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE KEY uk_user_date (user_id, checkin_date),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
